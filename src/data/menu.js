@@ -1,6 +1,6 @@
 const menu = [
   {
-    text: 'docs',
+    text: 'about',
     rootPath: '/docs',
     submenu: [
       {
@@ -26,15 +26,15 @@ const menu = [
     ],
   },
   {
-    text: 'Demo',
+    text: 'programs',
     path: 'https://demo.api-platform.com/',
   },
   {
-    text: 'News',
+    text: 'get involved',
     path: '/news',
   },
   {
-    text: 'Support',
+    text: 'media',
     path: '/support',
   },
 ];

@@ -18,11 +18,7 @@ const EcosystemCard = ({ big, image, link, text, title }) => (
         <article className="card__autosize">
           <p>{text}</p>
         </article>
-        <Button
-          text="Read more"
-          className="btn ecosystem__button small"
-          link={link}
-        />
+        <Button text="Read more" className="btn ecosystem__button small" link={link} />
       </div>
     </div>
   </div>
@@ -41,14 +37,17 @@ EcosystemCard.defaultProps = {
 };
 
 const Ecosystem = () => (
-  <section className="home__part home__ecosystem">
+  <section className="home__part home__ecosystem home__sag">
     <div className="container">
-      <h1 className="ecosystem__title">
-        The API Platform <strong>Framework</strong>
-      </h1>
-      <h5>
-        API Platform is a set of tools to build and consume web APIs
-      </h5>
+      <div className="header-cta">
+        <div className="header-cta-center">
+          <a href="http://www.saveagirlsaveaworld.org/uploads/1/3/4/7/13474796/sag_saw_-_scholarship_2017.pdf">
+						Apply
+          </a>
+					&nbsp;for the Kathleen L. M. Wilkes Scholarship for up to $2,500 towards your education.
+        </div>
+      </div>
+      <h5>API Platform is a set of tools to build and consume web APIs</h5>
       <div className="ecosystem__content grid__container">
         <EcosystemCard
           big

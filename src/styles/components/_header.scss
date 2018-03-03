@@ -1,5 +1,7 @@
 .header {
   @include z-depth-2;
+  $brand-colour: #30AAE1;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +20,68 @@
     align-items: center;
     padding: 0 10px;
     height: 100%;
+  }
+  .header__donate {
+    display: flex;
+
+  }
+
+  .button-default {
+    color: white;
+    background-color: teal;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .button-slanted {
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+
+  .button-slanted-content {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    display: inline-block;
+  }
+
+
+  .slanted-button {
+    background-color: #30AAE1;
+    color: #fff;
+    transform: skewX(-30deg) translateX(-50%);
+    border-radius: 2px 5px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    .button-inner {
+      display: block;
+      transform: skewX(30deg);
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover,
+    &:active {
+      background-color: darken(#30AAE1, 10%);
+
+    }
+
+  }
+
+
+
+  .slanted-button:hover,
+  .slanted-button:active {
+    background-color: #1c8ec2;
+  }
+
+
+
+  .header__primaryColor{
+    background: #E91E63 !important;
   }
 
   .header__logo,
@@ -44,6 +108,7 @@
   .logo__text {
     height: 20px;
     width: auto;
+    font-size: 20px;
 
     path {
       fill: $lightblue;

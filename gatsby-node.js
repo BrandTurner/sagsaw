@@ -7,42 +7,43 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const docTemplate = Path.resolve('src/templates/doc.js');
 
   const navQuery = graphql(`
-    {
-      allNavYaml {
-        edges {
-          node {
-            title
-            id
-            path
-            items {
-              id
-              title
-            }
-          }
-        }
-      }
-    }
-  `);
+		{
+			allNavYaml {
+				edges {
+					node {
+						title
+						id
+						path
+						items {
+							id
+							title
+						}
+					}
+				}
+			}
+		}
+	`);
 
   const docQuery = graphql(`
-    {
-      allMarkdownRemark(sort: { order: DESC, fields: [fields___path] }, limit: 1000) {
-        edges {
-          node {
-            fields {
-              path
-              redirect
-            }
-            excerpt(pruneLength: 250)
-            html
-            id
-          }
-        }
-      }
-    }
-  `);
+		{
+			allMarkdownRemark(sort: { order: DESC, fields: [fields___path] }, limit: 1000) {
+				edges {
+					node {
+						fields {
+							path
+							redirect
+						}
+						excerpt(pruneLength: 250)
+						html
+						id
+					}
+				}
+			}
+		}
+	`);
 
   return Promise.all([navQuery, docQuery]).then((values) => {
+    console.log(' HERE ', navQuery, values)
     const nav = values[0].data.allNavYaml.edges;
     const docs = values[1].data.allMarkdownRemark.edges;
     const parseNav = [];
@@ -97,7 +98,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         },
       });
 
-      if(redirect) {
+      if (redirect) {
         const redirects = [`/${redirect}`, `/${redirect}/`, `/${path}/`];
         redirects.map(redirPath =>
           createRedirect({
@@ -105,8 +106,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             toPath: `/${path}`,
             isPermanent: true,
             redirectInBrowser: true,
-          })
-        );
+          }));
       }
     });
   });
@@ -138,7 +138,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
   node.internal.content = html;
 
-  if('index' === Path.basename(nodePath)) {
+  if ('index' === Path.basename(nodePath)) {
     createNodeField({
       node,
       name: 'redirect',

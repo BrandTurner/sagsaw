@@ -3,6 +3,38 @@
   text-align: center;
   background-color: $lightgrey;
 
+.header-cta {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #7C4DFF;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .6px;
+  }
+
+  .header-cta a {
+    position: relative;
+    padding-bottom: .1875rem;
+    color: #F8BBD0;
+    white-space: nowrap;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .header-cta a:after {
+    content: "";
+    background: #6acdb1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+  }
+
+
   .grid__item {
     padding: 25px;
     width: 33.33%;

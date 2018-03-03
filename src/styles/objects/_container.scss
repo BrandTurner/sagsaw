@@ -4,9 +4,8 @@
 
 .container {
   margin: auto;
-  padding: 0 $page-padding;
+  padding: 0;
   width: 100%;
-  max-width: $max-width;
   z-index: z("default");
   position: relative;
   @include mq($max-width: $vw-small) {
