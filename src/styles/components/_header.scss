@@ -40,7 +40,13 @@
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
     transform: skewX(-20deg);
+    height: 48px !important;
+
+    span {
+      vertical-align: middle;
+    }
   }
+
 
   .button-slanted-content {
     -ms-transform: skewX(20deg);
@@ -95,8 +101,12 @@
 
   .logo__spider,
   .logo__text {
-    display: inline-block;
-    vertical-align: middle;
+display: flex;
+flex-direction: column;
+justify-content: center;
+resize: vertical;
+color: magenta;
+
   }
 
   .logo__spider {
@@ -154,7 +164,6 @@
       i,
       span {
         transition: all ease .2s;
-        line-height: $headerH;
         font-size: 1.8em;
       }
 

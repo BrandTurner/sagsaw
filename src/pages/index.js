@@ -14,11 +14,7 @@ const IndexPage = () => (
     <Helmet title="REST and GraphQL framework on top of Symfony and React" />
     <Cover />
     <Ecosystem />
-    <AllInOne />
-    <Giants />
-    <Schema />
-    <Expose />
-    <Seo />
+
     <References />
   </div>
 );

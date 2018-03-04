@@ -4,6 +4,8 @@ import classnames from 'classnames';
 import adminImage from 'images/admin_component.svg';
 import scaffoldingImage from 'images/scaffolding_component.svg';
 import apiImage from 'images/api_component.svg';
+import mediaObj1 from 'images/media-object-1.jpg';
+import mediaObj2 from 'images/media-object-2.jpg';
 import schemaImage from 'images/schema_component.svg';
 import Button from 'components/common/Button';
 
@@ -16,7 +18,10 @@ const EcosystemCard = ({ big, image, link, text, title }) => (
       <div className="card__content">
         <h3>{title}</h3>
         <article className="card__autosize">
-          <p>{text}</p>
+          <h2 className="about-desc">
+            {text}
+            <strong>THEY MATTER</strong>
+          </h2>
         </article>
         <Button text="Read more" className="btn ecosystem__button small" link={link} />
       </div>
@@ -47,33 +52,39 @@ const Ecosystem = () => (
 					&nbsp;for the Kathleen L. M. Wilkes Scholarship for up to $2,500 towards your education.
         </div>
       </div>
-      <h5>API Platform is a set of tools to build and consume web APIs</h5>
       <div className="ecosystem__content grid__container">
-        <EcosystemCard
-          big
-          image={apiImage}
-          link="/docs/core"
-          text="Build a fully-featured hypermedia or GraphQL API in minutes. Leverage its awesome features to develop complex and high performance API-first projects. Extend or override everything you want."
-          title="API Component"
-        />
-        <EcosystemCard
-          image={schemaImage}
-          link="/docs/schema-generator"
-          text="Instantly generates a PHP data model from the Schema.org vocabulary. Let the ORM create the related tables."
-          title="Schema Gen Component"
-        />
-        <EcosystemCard
-          image={adminImage}
-          link="/docs/admin"
-          text="Adds a convenient Material Design administration interface built with React without writing a line of code. It's a Progressive Web App!"
-          title="Admin Component"
-        />
-        <EcosystemCard
-          image={scaffoldingImage}
-          link="/docs/client-generator"
-          text="Scaffolds a Progressive Web App (React or Vue.js) or a native mobile app (React Native), and edit it to fit your needs."
-          title="Client Gen Component"
-        />
+        <div className="outer">
+          <div className="media-object">
+            <div className="card-text-left">
+              <span className="deep-purple-text small-text row-heading">Heading</span>
+              <h2 className="about-desc">
+								We celebrate the spirit of sisterly love by letting our members know that{' '}
+                <strong>they MATTER</strong>{' '}
+              </h2>
+							Example
+            </div>
+            <div className="card-image">
+              <img src={mediaObj1} className="image" />
+            </div>
+          </div>
+
+          <div className="media-object">
+            <div className="card-image">
+              <img src={mediaObj2} className="image" />
+            </div>
+            <div className="card-text-right">
+              <span className="small-text deep-purple-text uppercase row-heading">Heading</span>
+              <h2 className="about-desc">
+								We celebrate the spirit of sisterly love by letting our members know that{' '}
+                <strong>they MATTER</strong>{' '}
+              </h2>
+              <a href="_blank" className="btn-custom primary-custom deep-purple-text avant-text">
+								Example<span />
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
