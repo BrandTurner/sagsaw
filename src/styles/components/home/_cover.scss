@@ -18,6 +18,19 @@
     background-position: top center;
   }
 
+  .about_cover__content {
+    position: relative;
+    height: 350px !important;
+    overflow: hidden;
+    text-align: center;
+    padding-top: vheight(55);
+    z-index: z("default");
+    background: url('../images/one.jpg');
+    background-size: cover;
+    background-position: top center;
+  }
+
+
   .background__img {
 
     top: 0;

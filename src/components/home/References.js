@@ -18,12 +18,12 @@ const References = () => (
   <section className="home__part home__references">
     <div className="container references__container">
       <h1 className="references__title">
-        They use <strong>API Platform</strong>
+        They use <strong>.</strong>
       </h1>
       <h4>Open source projects</h4>
-      <div className="references__list">{openSourceList}</div>
+
       <h4>Companies</h4>
-      <div className="references__list list__other">{otherList}</div>
+
     </div>
   </section>
 );

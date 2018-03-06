@@ -15,7 +15,6 @@ const IndexPage = () => (
     <Cover />
     <Ecosystem />
 
-    <References />
   </div>
 );
 

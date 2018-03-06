@@ -31,23 +31,13 @@ class Footer extends Component {
           height="419"
         />
         <p className="footer__copyright">
-          Copyright © 2016{' '}
+          Copyright © 2018{' '}
           <a
             href="https://dunglas.fr/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kévin Dunglas
-          </a>
-        </p>
-        <p className="footer__tilleuls">
-          Supported by{' '}
-          <a
-            href="http://www.les-tilleuls.coop"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Les-Tilleuls.coop
+           Umbrella Corp.
           </a>
         </p>
         <p className="footer__licence">
