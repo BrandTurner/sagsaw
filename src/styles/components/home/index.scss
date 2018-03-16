@@ -8,6 +8,7 @@
 @import './schema';
 @import './references';
 @import './seo';
+@import './board';
 
 .hidden-small {
   @include mq($max-width: $vw-small) {

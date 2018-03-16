@@ -4,30 +4,135 @@ import Flag from 'components/home/Flag';
 import Button from 'components/common/Button';
 import Logo from 'components/layout/Logo';
 import Image from 'images/one.jpg';
+import styled from 'styled-components';
 
 const Cover = () => (
-  <section className="home__cover full">
-    <div className="container about_cover__content">
-      <Logo className="cover__logo" />
-      <div className="header-hero">
-        <h2>We inspire girls to change their world</h2>
-        <p>
-					Save a Girl, Save a World has been forging intergenerational links between girls since
-					201X.
-        </p>
-      </div>
-
-      <div className="cover__buttons">
-        <Button
-          empty
-          text="Download"
-          icon="download"
-          link="https://github.com/api-platform/api-platform/releases/latest"
-        />
-        <Button text="Get started" icon="flag" link="/docs/distribution" />
-      </div>
+  <section className="home__cover">
+    <div className="container about_cover__content add-slash">
+      <Container>
+        <ColMd5>
+          <HeroContent>
+            <POne>Program Details</POne>
+            <div>
+              <PTwo>
+                <strong>Building a pipeline of leaders</strong>who understand what it takes to
+								create lasting change
+              </PTwo>
+            </div>
+            <a href="https://google.com">Apply</a>
+          </HeroContent>
+        </ColMd5>
+      </Container>
     </div>
   </section>
 );
 
 export default Cover;
+
+const Row = styled.div`
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	min-height: 430px;
+`;
+
+const POne = styled.p`
+	font-size: 16px !important;
+	font-family: AvantGarde;
+	text-transform: uppercase;
+`;
+
+const PTwo = styled.p`
+	font-size: 32px !important;
+	font-family: AvantGarde;
+	text-transform: uppercase;
+`;
+
+const HeroContent = styled.div`
+	z-index: 10;
+	padding: 40px 0;
+	p {
+		text-align: left !important;
+	}
+`;
+
+const ColMd7 = styled.div`
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+	@media (min-width: 768px) {
+		-ms-flex: 0 0 58.333333%;
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+	}
+`;
+
+const ColMd5 = styled.div`
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	-ms-flex-item-align: left !important;
+	align-self: left !important;
+	float: right !important;
+	z-index: 999;
+
+	@media (min-width: 768px) {
+		flex: 0 0 41.666667 %;
+		max: 41.666667 %;
+	}
+`;
+
+const LeftAlign = styled.p`
+	text-align: left !important;
+`;
+
+const Container = styled.div`
+position: relative;
+top: -480px;
+left: 50%
+
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 35%;
+    min-height: 430px;
+  @media(min-width: 1200 px)
+   {
+    max-width: 1220 px;
+  }
+@media(min-width: 992 px)
+   {
+    max-width: 960 px;
+  }
+@media(min-width: 768 px)
+   {
+    max-width: 720 px;
+  }
+@media(min-width: 576 px)
+   {
+    max-width: 540 px;
+  }
+@media(min-width: 1200 px)
+   {
+    max-width: 1140 px;
+  }
+@media(min-width: 992 px)
+   {
+    max-width: 960 px;
+  }
+@media(min-width: 768 px)
+   {
+    max-width: 720 px;
+  }
+@media(min-width: 576 px)
+   {
+    max-width: 540 px;
+  }
+`;

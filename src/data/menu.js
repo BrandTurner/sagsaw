@@ -4,15 +4,15 @@ const menu = [
     rootPath: '/docs',
     submenu: [
       {
-        text: 'About Us',
+        text: 'Founder',
         path: '/about',
       },
       {
-        text: 'API component',
-        path: '/docs/core',
+        text: 'Board of Directors',
+        path: '/board',
       },
       {
-        text: 'Schema component',
+        text: 'Our Mission and Values',
         path: '/docs/schema-generator',
       },
       {
@@ -31,7 +31,29 @@ const menu = [
   },
   {
     text: 'get involved',
-    path: '/news',
+    rootpath: '/getInvolved',
+    submenu: [
+      {
+        text: 'Upcoming Programs and Events',
+        path: '/',
+      },
+      {
+        text: 'Benefits and Criteria',
+        path: '/benefits',
+      },
+      {
+        text: 'Volunteer',
+        path: '/volunteer',
+      },
+      {
+        text: 'Testimonials',
+        path: '/',
+      },
+      {
+        text: 'Volunteer',
+        path: '/',
+      },
+    ],
   },
   {
     text: 'media',

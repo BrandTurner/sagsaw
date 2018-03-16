@@ -42,7 +42,7 @@ class TemplateWrapper extends Component {
           <Helmet {...helmetConfig.head} />
           <Header />
           <div className={classNames('page openable', { 'with-footer': withFooter })}>{children()}</div>
-          {withFooter && <Footer />}
+
         </div>
         <BurgerButton
           onClick={this.showMenu.bind(null, !open)}
