@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: process.env.GATSBY_ROOT_URL,
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

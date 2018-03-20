@@ -7,6 +7,8 @@ import boardInfo from './members.json';
 import BoardObject from './BoardObject';
 import Sidebar from 'react-sidebar';
 
+const test = [];
+
 const siderStyles = {
   root: {
     position: 'absolute',
@@ -77,17 +79,9 @@ class Board extends Component {
   }
 
   info() {
-    console.log('rar');
+    console.log('bar');
   }
 
-  componentWillMount() {
-    document.addEventListener('click', (e) => {
-      console.log(e.target);
-    });
-    const el1 = this.refs.sider;
-    const el2 = ReactDOM.findDOMNode(this.refs.sider);
-    console.log(el1, el2);
-  }
 
   menuButtonClick(ev) {
     console.log('rar');
