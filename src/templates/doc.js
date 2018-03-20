@@ -34,28 +34,3 @@ Template.propTypes = {
   data: PropTypes.object.isRequired,
   pathContext: PropTypes.object.isRequired,
 };
-
-// eslint-disable-next-line no-undef
-export const pageQuery = graphql`
-  query DocByPath($path: String!) {
-    post: markdownRemark(fields: { path: { eq: $path } }) {
-      html
-    }
-    navDoc: allNavYaml {
-      edges {
-        node {
-          title
-          path
-          items {
-            id
-            title
-            anchors {
-              id
-              title
-            }
-          }
-        }
-      }
-    }
-  }
-`;
