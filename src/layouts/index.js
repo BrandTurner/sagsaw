@@ -10,62 +10,55 @@ import 'styles/main.scss';
 import helmetConfig from '../helmetConfig';
 
 class TemplateWrapper extends Component {
-  state = {
-    showResponsiveMenu: false,
-  };
+	state = {
+		showResponsiveMenu: false,
+	};
 
-  componentWillReceiveProps(nextProps) {
-    if (this.props.location.pathname !== nextProps.location.pathname) {
-      this.setState(prevState => ({ ...prevState, showResponsiveMenu: false }));
-    }
-  }
+	componentWillReceiveProps(nextProps) {
+		if (this.props.location.pathname !== nextProps.location.pathname) {
+			this.setState(prevState => ({ ...prevState, showResponsiveMenu: false }));
+		}
+	}
 
-  componentDidUpdate(prevState) {
-    const { showResponsiveMenu } = this.state;
-    if (prevState.showResponsiveMenu !== showResponsiveMenu) {
-      document.body.className = showResponsiveMenu ? 'open' : '';
-    }
-  }
+	componentDidUpdate(prevState) {
+		const { showResponsiveMenu } = this.state;
+		if (prevState.showResponsiveMenu !== showResponsiveMenu) {
+			document.body.className = showResponsiveMenu ? 'open' : '';
+		}
+	}
 
-  showMenu = (open) => {
-    this.setState(prevState => ({ ...prevState, showResponsiveMenu: open }));
-  };
+	showMenu = open => {
+		this.setState(prevState => ({ ...prevState, showResponsiveMenu: open }));
+	};
 
-  render() {
-    const { children, location } = this.props;
-    const open = this.state.showResponsiveMenu;
-    const withFooter = (-1 === location.pathname.search('/docs') || !location.key);
+	render() {
+		const { children, location } = this.props;
+		const open = this.state.showResponsiveMenu;
+		const withFooter = -1 === location.pathname.search('/docs') || !location.key;
 
-    return (
-      <div className={classNames('main full', { open })}>
-        <div className="full">
-          <Helmet {...helmetConfig.head} />
-          <Header />
-          <div className={classNames('page openable', { 'with-footer': withFooter })}>{children()}</div>
-
-        </div>
-        <BurgerButton
-          onClick={this.showMenu.bind(null, !open)}
-          status={open ? 'close' : 'burger'}
-        />
-        <div
-          role="presentation"
-          className="overlay"
-          onClick={this.showMenu.bind(null, false)}
-        />
-        <SideMenu open={open} />
-      </div>
-    );
-  }
+		return (
+			<div className={classNames('main full', { open })}>
+				<div className="full">
+					<Helmet {...helmetConfig.head} />
+					<Header />
+					<div className={classNames('page openable', { 'with-footer': withFooter })}>{children()}</div>
+					<Footer />
+				</div>
+				<BurgerButton onClick={this.showMenu.bind(null, !open)} status={open ? 'close' : 'burger'} />
+				<div role="presentation" className="overlay" onClick={this.showMenu.bind(null, false)} />
+				<SideMenu open={open} />
+			</div>
+		);
+	}
 }
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.any,
-  location: PropTypes.object.isRequired,
+	children: PropTypes.any,
+	location: PropTypes.object.isRequired,
 };
 
 TemplateWrapper.defaultProps = {
-  children: null,
+	children: null,
 };
 
 export default TemplateWrapper;

@@ -9,6 +9,7 @@
 @import './references';
 @import './seo';
 @import './board';
+@import './aboutcover';
 
 .hidden-small {
   @include mq($max-width: $vw-small) {

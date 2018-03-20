@@ -6,8 +6,8 @@ import Logo from 'components/layout/Logo';
 import Image from 'images/one.jpg';
 import styled from 'styled-components';
 
-const Cover = () => (
-  <section className="home__cover">
+const AboutCover = () => (
+  <section className="home__about_cover">
     <div className="container about_cover__content add-slash">
       <Container>
         <ColMd5>
@@ -15,7 +15,7 @@ const Cover = () => (
             <POne>Program Details</POne>
             <div>
               <PTwo>
-                <strong>Building a pipeline of leaders</strong>who understand what it takes to
+                <strong>Building a pipeline of leaders</strong> who understand what it takes to
 								create lasting change
               </PTwo>
             </div>
@@ -27,7 +27,7 @@ const Cover = () => (
   </section>
 );
 
-export default Cover;
+export default AboutCover;
 
 const Row = styled.div`
 	display: -ms-flexbox;
@@ -41,14 +41,19 @@ const Row = styled.div`
 
 const POne = styled.p`
 	font-size: 16px !important;
-	font-family: AvantGarde;
-	text-transform: uppercase;
+	font-family: AvantGarde !important;
+  text-transform: uppercase;
+  letter-spacing: 1px !important;
+    line-height: 28px !important;
+    font-weight: bold !important;
 `;
 
 const PTwo = styled.p`
 	font-size: 32px !important;
-	font-family: AvantGarde;
-	text-transform: uppercase;
+	font-family: AvantGardeLight !important;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  letter-spacing: .5px !important
 `;
 
 const HeroContent = styled.div`

@@ -7,39 +7,12 @@ import apiImage from 'images/api_component.svg';
 import mediaObj1 from 'images/media-object-1.jpg';
 import mediaObj2 from 'images/media-object-2.jpg';
 import schemaImage from 'images/schema_component.svg';
-import Button from 'components/common/Button';
+import styled from 'styled-components';
+import { Button, Icon, Tab, Image } from 'semantic-ui-react';
+import { Tabs } from 'antd';
+import 'antd/dist/antd.css';
 
-const EcosystemCard = ({ big, image, link, text, title }) => (
-  <div className={classnames('grid__item', { full: big })}>
-    <div className={classnames('card ecosystem__card', { big })}>
-      <div className="card__circle">
-        <img src={image} alt={title} width="646" height="646" />
-      </div>
-      <div className="card__content">
-        <h3>{title}</h3>
-        <article className="card__autosize">
-          <h2 className="about-desc">
-            {text}
-            <strong>THEY MATTER</strong>
-          </h2>
-        </article>
-        <Button text="Read more" className="btn ecosystem__button small" link={link} />
-      </div>
-    </div>
-  </div>
-);
-
-EcosystemCard.propTypes = {
-  big: PropTypes.bool,
-  image: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};
-
-EcosystemCard.defaultProps = {
-  big: false,
-};
+const TabPane = Tabs.TabPane;
 
 const VolunteerEcosystem = () => (
   <section className="home__part home__ecosystem home__sag">
@@ -52,83 +25,294 @@ const VolunteerEcosystem = () => (
 					&nbsp;for the Kathleen L. M. Wilkes Scholarship for up to $2,500 towards your education.
         </div>
       </div>
-      <div className="ecosystem__content grid__container">
+      <section className="ecosystem__content grid__container" id="volunteer">
         <div className="outer">
-          <div className="media-object">
-            <div className="card-text-left">
-              <span className="deep-purple-text small-text row-heading">Heading</span>
-              <h2 className="about-desc">
-								We celebrate the spirit of sisterly love by letting our members know that{' '}
-                <strong>they MATTER</strong>{' '}
-              </h2>
-							Example
-            </div>
-            <div className="card-image">
-              <img src={mediaObj1} className="image" />
-            </div>
-          </div>
+          <Row>
+            <Volunteer>
+              <SectionTitle>Volunteer</SectionTitle>
+              <Bar />
+              <Description>
+								Mentors form the bedrock of Save a Girl Save a World They are 18+ and can be
+								educators, entrepreneurs, marketers, computer scientists, librarians, parents,
+								college students or volunteers from any background or field. We are recruiting
+								professional women to be paired with both a college and high school mentee. Our
+								Mentors guide girls through the curriculum, helping them to build sisterhood within
+								the Club, giving them the tools to navigate through life's obstacles while focusing
+								on health, lifestyle, wealth and career challenges.
+              </Description>
+              <ButtonGroup>
+                <Button color="violet" size="massive">
+									Apply for Mentorship <Icon color="white" name="long arrow right" />
+                </Button>
+              </ButtonGroup>
+            </Volunteer>
+          </Row>
 
-          <div className="media-object">
-            <div className="card-image">
-              <img src={mediaObj2} className="image" />
-            </div>
-            <div className="card-text-right">
-              <span className="small-text deep-purple-text uppercase row-heading">Heading</span>
-              <h2 className="about-desc">
-								We celebrate the spirit of sisterly love by letting our members know that{' '}
-                <strong>they MATTER</strong>{' '}
-              </h2>
-              <a href="_blank" className="btn-custom primary-custom deep-purple-text avant-text">
-								Example<span />
-              </a>
-            </div>
-          </div>
+          <Tabs
+            defaultActiveKey="1"
+            style={{ marginBottom: 100 }}
+            tabBarStyle={{ backgroundColor: 'indigo', color: 'white' }}
+          >
+            <TabPane tab="WHAT WE'RE LOOKING FOR" key="1">
+              <CenterFlex>
+                <PaneText>
+									You are:
+									<LookingForList>
+  <li> 18+</li>
+  <li> Available 3-4 hours per week, including travel & prep time </li>
+  <li>
+											Comfortable learning alongside Club girls as they explore the foundational
+											computer science concepts of variables, loops, conditionals and functions. Our
+											curriculum is designed so that anyone can facilitate a Club; no computer
+											science experience is needed! In fact, many Facilitators have NO technical
+											background. Here’s how Girls Who Code supports Facilitators!
+  </li>
+  <li>
+    {' '}
+											Passionate about Girls Who Code’s mission to close the gender gap in
+											technology and have the ability to foster community within your Girls Who Code
+											Club.
+  </li>
+									</LookingForList>
+                  <ApplyLink style={{ width: 'auto', textAlign: 'left' }}>
+                    <Linker href="https://google.com">Apply Today!</Linker>
+                  </ApplyLink>
+                </PaneText>
+              </CenterFlex>
+            </TabPane>
+            <TabPane tab="WHAT MENTORING ENTAILS" key="2">
+              <CenterFlex>
+                <PaneText>
+									You are:
+									<LookingForList>
+  <li> 18+</li>
+  <li> Available 3-4 hours per week, including travel & prep time </li>
+  <li>
+											Comfortable learning alongside Club girls as they explore the foundational
+											computer science concepts of variables, loops, conditionals and functions. Our
+											curriculum is designed so that anyone can facilitate a Club; no computer
+											science experience is needed! In fact, many Facilitators have NO technical
+											background. Here’s how Girls Who Code supports Facilitators!
+  </li>
+  <li>
+    {' '}
+											Passionate about Girls Who Code’s mission to close the gender gap in
+											technology and have the ability to foster community within your Girls Who Code
+											Club.
+  </li>
+									</LookingForList>
+                  <ApplyLink style={{ width: 'auto', textAlign: 'left' }}>
+                    <Linker href="https://google.com">Apply Today!</Linker>
+                  </ApplyLink>
+                </PaneText>
+              </CenterFlex>
+            </TabPane>
+            <TabPane tab="WHAT YOUR COMMITMENT WILL BE" key="3">
+              <CenterFlex>
+                <PaneText>
+									You are:
+									<LookingForList>
+  <li> 18+</li>
+  <li> Available 3-4 hours per week, including travel & prep time </li>
+  <li>
+											Comfortable learning alongside Club girls as they explore the foundational
+											computer science concepts of variables, loops, conditionals and functions. Our
+											curriculum is designed so that anyone can facilitate a Club; no computer
+											science experience is needed! In fact, many Facilitators have NO technical
+											background. Here’s how Girls Who Code supports Facilitators!
+  </li>
+  <li>
+    {' '}
+											Passionate about Girls Who Code’s mission to close the gender gap in
+											technology and have the ability to foster community within your Girls Who Code
+											Club.
+  </li>
+									</LookingForList>
+                  <ApplyLink style={{ width: 'auto', textAlign: 'left' }}>
+                    <Linker href="https://google.com">Apply Today!</Linker>
+                  </ApplyLink>
+                </PaneText>
+              </CenterFlex>
+            </TabPane>
+          </Tabs>
+          <Testimonial>
+            <VolunteerTwo>
+              <Image src={mediaObj1} size="small" circular />
+              <SectionTitle>Volunteer</SectionTitle>
+              <Bar />
+              <DescriptionTwo>
+								Mentors form the bedrock of Save a Girl Save a World They are 18+ and can be
+								educators, entrepreneurs, marketers, computer scientists, librarians, parents,
+								college students or volunteers from any background or field. We are recruiting
+								professional women to be paired with both a college and high school mentee. Our
+								Mentors guide girls through the curriculum, helping them to build sisterhood within
+								the Club, giving them the tools to navigate through life's obstacles while focusing
+								on health, lifestyle, wealth and career challenges.
+              </DescriptionTwo>
+              <ButtonGroup>
+                <Button color="violet" size="massive">
+									Apply for Mentorship <Icon color="white" name="long arrow right" />
+                </Button>
+              </ButtonGroup>
+            </VolunteerTwo>
+          </Testimonial>
         </div>
-      </div>
-
-      <div className="home__partners gray-background">
-
-          <div className="media-object gray-background">
-            <div className="grid-wrapper">
-              <div className="grid-box a">
-                {' '}
-                <img src="https://logo.clearbit.com/hyundai.com?size=100" />
-              </div>
-              <div className="grid-box b">
-                {' '}
-                <img src="https://logo.clearbit.com/ford.com?size=100" />
-              </div>
-              <div className="grid-box c">
-                {' '}
-                <img src="https://logo.clearbit.com/enterprise.com?size=100" />
-              </div>
-              <div className="grid-box d">
-                {' '}
-                <img src="https://logo.clearbit.com/honda.com?size=100" />
-              </div>
-              <div className="grid-box e">
-                {' '}
-                <img src="https://logo.clearbit.com/uber.com?size=100" />
-              </div>
-              <div className="grid-box f">
-                {' '}
-                <img src="https://logo.clearbit.com/vw.com?size=100" />
-              </div>
-            </div>
-            <div className="card-text-right">
-              <span className="small-text deep-purple-text uppercase row-heading">Heading</span>
-              <h2 className="about-desc">
-								We celebrate the spirit of sisterly love by letting our members know that{' '}
-                <strong>they MATTER</strong>{' '}
-              </h2>
-              <a href="_blank" className="btn-custom primary-custom deep-purple-text avant-text">
-								Example<span />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
+    </div>
   </section>
 );
 
 export default VolunteerEcosystem;
+
+const Testimonial = styled.div`
+  position: relative;
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+	&:before {
+		content: '';
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		outline: 1px solid transparent;
+		top: -0.3125rem;
+		right: -1.875rem;
+		bottom: -0.3125rem;
+		left: -1.875rem;
+		-webkit-transform: rotateZ(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotateZ(2deg);
+		background: #ece816;
+		z-index: 1;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		outline: 1px solid transparent;
+		top: 0;
+		right: -1.875rem;
+		bottom: 0;
+		left: -1.875rem;
+		-webkit-transform: rotateZ(-2deg);
+		-ms-transform: rotate(-2deg);
+		transform: rotateZ(-2deg);
+		background: #6acdb1;
+		z-index: 2;
+	}
+`;
+
+const ApplyLink = styled.p`
+	color: ##f8bbd0;
+	text-decoration: none;
+	cursor: pointer;
+	width: auto;
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+`;
+
+const Linker = styled.a`
+	color: ##f8bbd0;
+	text-decoration: none;
+	cursor: pointer;
+	width: auto;
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	color: magenta;
+	text-decoration: underline;
+	text-decoration-color: #6acdb1;
+`;
+
+const CenterFlex = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+const PaneText = styled.div`
+	width: 800px;
+	text-align: left;
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	color: indigo;
+	text-align: left;
+	margin-bottom: 15px;
+`;
+
+const LookingForList = styled.ul`
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-top: 10px;
+`;
+
+const ButtonGroup = styled.div`
+	display: flex;
+	justify-content: center;
+`;
+const Volunteer = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 99;
+`;
+
+const VolunteerTwo = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  z-index: 99;
+  max-width: 780px;
+`;
+
+const TestimonialContent = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+`;
+
+const Description = styled.p`
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	color: indigo;
+	text-align: center;
+	margin-bottom: 15px;
+`;
+
+const DescriptionTwo = styled.p`
+	font-family: 'Avenir', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	color: indigo;
+	text-align: center;
+  margin-bottom: 15px;
+  z-index: 99;
+`;
+
+const Row = styled.div`
+	max-width: 900px;
+	margin-bottom: 20px;
+`;
+
+const SectionTitle = styled.h1`
+	margin-bottom: 15px;
+	font-family: 'Avenir', Arial, sans-serif;
+`;
+
+const Bar = styled.div`
+	width: 275px;
+	height: 6px;
+	background: magenta;
+	margin-bottom: 20px;
+`;
