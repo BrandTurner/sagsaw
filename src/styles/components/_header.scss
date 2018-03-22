@@ -18,8 +18,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 10px;
+    padding: 30px 20px;
     height: 100%;
+
+
   }
   .header__donate {
     display: flex;
@@ -99,15 +101,28 @@
     width: 300px;
   }
 
-  .logo__spider,
   .logo__text {
-display: flex;
-flex-direction: column;
-justify-content: center;
-resize: vertical;
-color: magenta;
 
+color: #000;
+text-transform: uppercase;
+font-family: Helvetica, Arial, Helvetica, sans-serif;
+position: relative !important;
+top: -19px;
+    position: relative;
+    line-height: 29px;
+    font-weight: 200;
+
+    span {
+      font-family: 'Italianno';
+      text-transform: lowercase !important;
+      display: inline;
+    }
   }
+
+  .logo__text2 {
+    text-align: center;
+  }
+
 
   .logo__spider {
     margin: 0 15px;
@@ -164,13 +179,16 @@ color: magenta;
       i,
       span {
         transition: all ease .2s;
-        font-size: 1.8em;
       }
 
       span {
         color: inherit;
         font-weight: $light;
         text-transform: uppercase;
+           color: #757575;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: 'AvantGarde';
       }
 
       i {

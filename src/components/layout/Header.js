@@ -6,37 +6,67 @@ import SaveAGirlLogo from 'images/SaveAGirl-Logo-64.png';
 import Logo from './Logo';
 import Search from './Search';
 import MenuItem from './MenuItem';
+import styled from 'styled-components';
+import { Icon } from 'antd';
 
 const nav = links.map(link => <MenuItem key={link.text} {...link} />);
 
 const Header = () => (
-  <header className="header openable">
-    <Link to="/" className="header__logo">
-      <img
-        className="logo__spider"
-        src={SaveAGirlLogo}
-        alt="Save A Girl, Save A World"
-        width="555"
-        height="321"
-      />
-      <Logo className="logo__text" />
-    </Link>
+	<header className="header openable">
+		<Link to="/" className="header__logo">
+			<img
+				className="logo__spider"
+				src={SaveAGirlLogo}
+				alt="Save A Girl, Save A World"
+				width="555"
+				height="321"
+			/>
+			<Logo className="logo__text" />
+		</Link>
 
-    <nav className="header__nav">{nav}</nav>
-    <nav className="header__nav">
-      <div className="button-default button-slanted logo__text">
-        <span className="button-slanted-content">Donate</span>
-      </div>
-    </nav>
-    <nav className="header__social">
-      <a href="https://twitter.com/ApiPlatform" target="blank">
-        <i className="icon-twitter" />
-      </a>
-      <a href="https://github.com/api-platform/api-platform" target="blank">
-        <i className="icon-github" />
-      </a>
-    </nav>
-  </header>
+		<nav className="header__nav">{nav}</nav>
+		<nav className="header__nav" style={{ marginRight: 25 }}>
+			<SlantedButton>
+				<SlantedButtonContent>Donate</SlantedButtonContent>
+			</SlantedButton>
+		</nav>
+		<nav className="header__social">
+			<Icon type="facebook" style={{ fontSize: 32, color: '#C2185B' }} />
+			<Icon type="instagram" style={{ fontSize: 32, color: '#C2185B' }} />
+			<Icon type="youtube" style={{ fontSize: 32, color: '#C2185B' }} />
+		</nav>
+	</header>
 );
 
 export default Header;
+
+const SlantedButton = styled.button`
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	color: #ffffff;
+	font-size: 16px;
+	background: #e91e63;
+	padding: 0 40px;
+	text-decoration: none;
+	-ms-transform: skewX(20deg);
+	-webkit-transform: skewX(20deg);
+	transform: skewX(20deg);
+	height: 48px !important;
+
+	&:hover {
+		background: #c2185b;
+		text-decoration: none;
+	}
+`;
+
+const SlantedButtonContent = styled.span`
+	-ms-transform: skewX(-20deg);
+	-webkit-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'AvantGarde';
+	font-weight: 900;
+	text-transform: uppercase;
+`;

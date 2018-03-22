@@ -1,3 +1,13 @@
+# Palette
+DARK PRIMARY COLOR #C2185B
+LIGHT PRIMARY COLOR #F8BBD0
+PRIMARY COLOR #E91E63
+TEXT / ICONS #FFFFFF
+ACCENT COLOR #7C4DFF
+PRIMARY TEXT #212121
+SECONDARY TEXT #757575
+DIVIDER COLOR #BDBDBD
+
 # api-platform.com
 
 This repository contains the source code and documentation powering [api-platform.com](https://api-platform.com/).

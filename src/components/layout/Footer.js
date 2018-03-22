@@ -84,18 +84,22 @@ class Footer extends Component {
 									</li>
 								</ul>
 							</TopNav>
-							<BottomNav>
-								<ul style={{ listStyle: 'none', marginTop: 53 }}>
+							<TopNav>
+								<ul style={{ listStyle: 'none', marginTop: 20 }}>
 									<li style={{ display: 'inline-block', float: 'left' }}>
 										<FirstBottomLink>Financial Overview and Transparency Report</FirstBottomLink>
 									</li>
-									<li style={{ display: 'inline-block', float: 'left' }}><BottomLink>Privacy Policy</BottomLink></li>
-									<li style={{ display: 'inline-block', float: 'left' }}><BottomLink>Terms of Use</BottomLink></li>
+									<li style={{ display: 'inline-block', float: 'left' }}>
+										<BottomLink>Privacy Policy</BottomLink>
+									</li>
+									<li style={{ display: 'inline-block', float: 'left' }}>
+										<BottomLink>Terms of Use</BottomLink>
+									</li>
 									<li style={{ display: 'inline-block', float: 'left' }}>
 										<BottomLink>Website by Umbrella Corp.</BottomLink>
 									</li>
 								</ul>
-							</BottomNav>
+							</TopNav>
 						</ColumnSpanTen>
 					</BottomRow>
 				</Container>
@@ -353,6 +357,7 @@ const ColumnSpan = styled.div`
 
 const ColumnSpanTwo = styled.div`
 	grid-column: span 2;
+	height: 103px;
 `;
 
 const ColumnSpanTen = styled.div`
@@ -360,7 +365,9 @@ const ColumnSpanTen = styled.div`
 `;
 
 const FooterLogo = styled.img`
-	max-width: 100%;
+	width: auto;
+	height: 100%;
 	vertical-align: middle;
 	border-style: none;
+	display: block;
 `;
