@@ -7,24 +7,24 @@ import Image from 'images/one.jpg';
 import styled from 'styled-components';
 
 const AboutCover = () => (
-  <section className="home__about_cover">
-    <div className="container about_cover__content add-slash">
-      <Container>
-        <ColMd5>
-          <HeroContent>
-            <POne>Program Details</POne>
-            <div>
-              <PTwo>
-                <strong>Building a pipeline of leaders</strong> who understand what it takes to
-								create lasting change
-              </PTwo>
-            </div>
-            <a href="https://google.com">Apply</a>
-          </HeroContent>
-        </ColMd5>
-      </Container>
-    </div>
-  </section>
+	<section className="home__about_cover">
+		<div className="container about_cover__content add-slash">
+			<Container>
+				<ColMdFive>
+					<HeroContent>
+						<POne>About Us</POne>
+						<div>
+							<PTwo>
+								<WeAreStrong>Developing Leaders who challenge the status quo</WeAreStrong> and inspire
+								their communities to build a better future
+							</PTwo>
+						</div>
+						<a href="https://google.com">Apply</a>
+					</HeroContent>
+				</ColMdFive>
+			</Container>
+		</div>
+	</section>
 );
 
 export default AboutCover;
@@ -41,19 +41,22 @@ const Row = styled.div`
 
 const POne = styled.p`
 	font-size: 16px !important;
-	font-family: AvantGarde !important;
-  text-transform: uppercase;
-  letter-spacing: 1px !important;
-    line-height: 28px !important;
-    font-weight: bold !important;
+	font-family: 'AvantGarde' !important;
+	text-transform: uppercase;
+	letter-spacing: 1px !important;
+	line-height: 28px !important;
+	font-weight: bold !important;
 `;
-
+const WeAreStrong = styled.strong`
+  font-family: 'AvantGardeLight' !important;
+  font-weight: 900 !important;
+`;
 const PTwo = styled.p`
 	font-size: 32px !important;
-	font-family: AvantGardeLight !important;
-  text-transform: uppercase;
-  font-weight: 900 !important;
-  letter-spacing: .5px !important
+	font-family: 'AvantGardeLight' !important;
+	text-transform: uppercase;
+	font-weight: 900 !important;
+	letter-spacing: 0.5px !important;
 `;
 
 const HeroContent = styled.div`
@@ -64,7 +67,7 @@ const HeroContent = styled.div`
 	}
 `;
 
-const ColMd7 = styled.div`
+const ColMdSeven = styled.div`
 	position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -78,7 +81,7 @@ const ColMd7 = styled.div`
 	}
 `;
 
-const ColMd5 = styled.div`
+const ColMdFive = styled.div`
 	position: relative;
 	width: 100%;
 	min-height: 1px;
@@ -90,8 +93,8 @@ const ColMd5 = styled.div`
 	z-index: 999;
 
 	@media (min-width: 768px) {
-		flex: 0 0 41.666667 %;
-		max: 41.666667 %;
+		flex: 0 0 41.666667%;
+		max: 41.666667%;
 	}
 `;
 
