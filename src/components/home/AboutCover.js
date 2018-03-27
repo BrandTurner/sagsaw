@@ -18,8 +18,14 @@ const AboutCover = () => (
 								<WeAreStrong>Developing Leaders who challenge the status quo</WeAreStrong> and inspire
 								their communities to build a better future
 							</PTwo>
+							<SlantedButton>
+								<SlantedButtonContent>
+									<a href="https://google.com" style={{ color: '#fff' }}>
+										Apply to Volunteer
+									</a>
+								</SlantedButtonContent>
+							</SlantedButton>
 						</div>
-						<a href="https://google.com">Apply</a>
 					</HeroContent>
 				</ColMdFive>
 			</Container>
@@ -48,15 +54,16 @@ const POne = styled.p`
 	font-weight: bold !important;
 `;
 const WeAreStrong = styled.strong`
-  font-family: 'AvantGardeLight' !important;
-  font-weight: 900 !important;
+	font-family: 'AvantGardeLight' !important;
+	font-weight: 900 !important;
 `;
 const PTwo = styled.p`
 	font-size: 32px !important;
 	font-family: 'AvantGardeLight' !important;
 	text-transform: uppercase;
 	font-weight: 900 !important;
-	letter-spacing: 0.5px !important;
+  letter-spacing: 0.5px !important;
+  line-height: 40px !important;
 `;
 
 const HeroContent = styled.div`
@@ -143,4 +150,36 @@ left: 50%
    {
     max-width: 540 px;
   }
+`;
+
+const SlantedButton = styled.button`
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0px;
+	color: #ffffff;
+	font-size: 16px;
+	background: #e91e63;
+	padding: 0 40px;
+	text-decoration: none;
+	-ms-transform: skewX(20deg);
+	-webkit-transform: skewX(20deg);
+	transform: skewX(20deg);
+  height: 48px !important;
+  display: block !important;
+
+	&:hover {
+		background: #c2185b;
+		text-decoration: none;
+	}
+`;
+
+const SlantedButtonContent = styled.span`
+	-ms-transform: skewX(-20deg);
+	-webkit-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'AvantGarde';
+	font-weight: 900;
+	text-transform: uppercase;
 `;

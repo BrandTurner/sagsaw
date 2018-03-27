@@ -112,6 +112,13 @@ top: -19px;
     line-height: 29px;
     font-weight: 200;
 
+    @media (max-width: 1115px) {
+      display: none;
+    }
+
+    @media (max-width: 599px) {
+      display: block;
+    }
     span {
       font-family: 'Italianno';
       text-transform: lowercase !important;
@@ -229,10 +236,13 @@ top: -19px;
         border-bottom: 1px solid $grey;
         white-space: nowrap;
         font-weight: $normal;
-        font-size: 1.4em;
+        font-size: 1em;
         background-color: $white;
         color: $blackblue;
         transition: all ease .2s;
+        font-family: 'AvantGarde', Arial, sans-serif;
+        text-transform: uppercase;
+
 
         &:hover {
           background-color: $lightgrey;

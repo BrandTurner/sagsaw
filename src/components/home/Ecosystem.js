@@ -9,6 +9,7 @@ import mediaObj2 from 'images/media-object-2.jpg';
 import schemaImage from 'images/schema_component.svg';
 import Button from 'components/common/Button';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const Ecosystem = () => (
 	<section className="home__part home__ecosystem home__sag" style={{paddingBottom: 0}}>
@@ -23,79 +24,85 @@ const Ecosystem = () => (
 			</div>
 			<div className="ecosystem__content grid__container">
 				<div className="outer">
-					<div className="media-object">
-						<div className="card-text-left">
-							<span className="deep-purple-text small-text row-heading">Sisterhood</span>
-							<CardText className="about-desc">
-								We celebrate the spirit of sisterly love by letting our members know that{' '}
-								<Strong>they MATTER</Strong>{' '}
-							</CardText>
-							<SlantedButton>
-								<SlantedButtonContent>Learn More about Us</SlantedButtonContent>
-							</SlantedButton>
-						</div>
-						<div className="card-image">
-							<img src={mediaObj1} className="image" />
-						</div>
-					</div>
+          <Fade left>
+            <div className="media-object">
+              <div className="card-text-left">
+                <span className="deep-purple-text small-text row-heading">Sisterhood</span>
+                <CardText className="about-desc">
+                  We celebrate the spirit of sisterly love by letting our members know that{' '}
+                  <Strong>they MATTER</Strong>{' '}
+                </CardText>
+                <SlantedButton>
+                  <SlantedButtonContent>Learn More about Us</SlantedButtonContent>
+                </SlantedButton>
+              </div>
+              <div className="card-image">
+                <img src={mediaObj1} className="image" />
+              </div>
+            </div>
+          </Fade>
 
-					<div className="media-object">
-						<div className="card-image">
-							<img src={mediaObj2} className="image" />
-						</div>
-						<div className="card-text-right">
-							<span className="small-text deep-purple-text uppercase row-heading">Heading</span>
-							<CardText className="about-desc">
-								<Strong>Our Mentors</Strong> are dynamic creative professionals entreperneus and moral
-								leaders committed to challenging the status quo
-							</CardText>
-							<SlantedButton>
-								<SlantedButtonContent>Apply to be a Mentor</SlantedButtonContent>
-							</SlantedButton>
-						</div>
-					</div>
+          <Fade right>
+            <div className="media-object">
+              <div className="card-image">
+                <img src={mediaObj2} className="image" />
+              </div>
+              <div className="card-text-right">
+                <span className="small-text deep-purple-text uppercase row-heading">Heading</span>
+                <CardText className="about-desc">
+                  <Strong>Our Mentors</Strong> are dynamic creative professionals entreperneus and moral
+                  leaders committed to challenging the status quo
+                </CardText>
+                <SlantedButton>
+                  <SlantedButtonContent>Apply to be a Mentor</SlantedButtonContent>
+                </SlantedButton>
+              </div>
+            </div>
+          </Fade>
 				</div>
 			</div>
 
 			<div className="home__partners gray-background">
-				<div className="media-object gray-background">
-					<div className="grid-wrapper">
-						<div className="grid-box a">
-							{' '}
-							<img src="https://logo.clearbit.com/hyundai.com?size=100" />
-						</div>
-						<div className="grid-box b">
-							{' '}
-							<img src="https://logo.clearbit.com/ford.com?size=100" />
-						</div>
-						<div className="grid-box c">
-							{' '}
-							<img src="https://logo.clearbit.com/enterprise.com?size=100" />
-						</div>
-						<div className="grid-box d">
-							{' '}
-							<img src="https://logo.clearbit.com/honda.com?size=100" />
-						</div>
-						<div className="grid-box e">
-							{' '}
-							<img src="https://logo.clearbit.com/uber.com?size=100" />
-						</div>
-						<div className="grid-box f">
-							{' '}
-							<img src="https://logo.clearbit.com/vw.com?size=100" />
-						</div>
-					</div>
-					<div className="card-text-right">
-						<span className="small-text deep-purple-text uppercase row-heading">Our Partners</span>
-						<CardTextPartners className="about-desc">
-							WE PARTNER WITH SOME OF THE WORLD'S MOST RECOGNIZED CORPORATIONS COMMITTED TO TACKLING
-							Diversity
-						</CardTextPartners>
-						<SlantedButton>
-							<SlantedButtonContent>Join Us</SlantedButtonContent>
-						</SlantedButton>
-					</div>
-				</div>
+        <Fade bottom>
+          <div className="media-object gray-background">
+            <div className="grid-wrapper">
+              <div className="grid-box a">
+                {' '}
+                <img src="https://logo.clearbit.com/hyundai.com?size=100" />
+              </div>
+              <div className="grid-box b">
+                {' '}
+                <img src="https://logo.clearbit.com/ford.com?size=100" />
+              </div>
+              <div className="grid-box c">
+                {' '}
+                <img src="https://logo.clearbit.com/enterprise.com?size=100" />
+              </div>
+              <div className="grid-box d">
+                {' '}
+                <img src="https://logo.clearbit.com/honda.com?size=100" />
+              </div>
+              <div className="grid-box e">
+                {' '}
+                <img src="https://logo.clearbit.com/uber.com?size=100" />
+              </div>
+              <div className="grid-box f">
+                {' '}
+                <img src="https://logo.clearbit.com/vw.com?size=100" />
+              </div>
+            </div>
+            <div className="card-text-right">
+              <span className="small-text deep-purple-text uppercase row-heading">Our Partners</span>
+              <CardTextPartners className="about-desc">
+                WE PARTNER WITH SOME OF THE WORLD'S MOST RECOGNIZED CORPORATIONS COMMITTED TO TACKLING
+                Diversity
+              </CardTextPartners>
+              <SlantedButton>
+                <SlantedButtonContent>Join Us</SlantedButtonContent>
+              </SlantedButton>
+            </div>
+          </div>
+        </Fade>
 			</div>
 		</div>
 	</section>

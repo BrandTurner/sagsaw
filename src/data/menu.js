@@ -13,15 +13,7 @@ const menu = [
       },
       {
         text: 'Our Mission and Values',
-        path: '/docs/schema-generator',
-      },
-      {
-        text: 'Admin component',
-        path: '/docs/admin',
-      },
-      {
-        text: 'Scaffolding component',
-        path: '/docs/client-generator',
+        path: '/mission',
       },
     ],
   },
@@ -56,8 +48,8 @@ const menu = [
     ],
   },
   {
-    text: 'media',
-    path: '/support',
+    text: 'The Latest',
+    path: '/blog',
   },
 ];
 

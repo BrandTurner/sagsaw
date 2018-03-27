@@ -8,9 +8,9 @@
     height: calc(100vh - 80px);
     overflow: hidden;
     text-align: center;
-    padding-top: vheight(55);
+    padding-top: 100px !important;
     z-index: z("default");
-    background: url('../images/one.jpg');
+    background: url('../images/cover_photo.jpg');
     background-size: cover;
     background-position: top center;
   }
@@ -19,9 +19,10 @@
     height: 350px !important;
     overflow: hidden;
     text-align: center;
-    padding-top: vheight(55);
+    padding-top: 100px !important;
     z-index: z("default");
-    background: url('../images/one.jpg');
+    background: url('../images/cover_photo.jpg');
+
     background-size: cover;
     background-position: top center;
   }
@@ -72,9 +73,15 @@
   }
   h2 {
     max-width: 80%;
-    font-size: 6rem;
+    font-size: 60px;
     line-height: 1.2em;
-    font-family: Lato, Arial, sans-serif;
+    font-family: 'AvantGarde', Arial, sans-serif;
+    text-shadow: -1px 0 #000000,
+    0 1px #000000,
+    1px 0 #000000,
+    0 -1px #000000;
+    font-weight: 700;
+    text-transform: uppercase;
     font-weight: 200;
     line-height: 1;
     color: white;
@@ -84,7 +91,16 @@
     font-size: 20px !important;
     line-height: 1.5 !important;
     font-weight: 200;
-    font-family: "Ek Mukta", Arial, sans-serif !important;
+
+    font-family: 'Ek Muktai',
+    Arial,
+    sans-serif !important;
+    text-shadow: -1px 0 #000000,
+    0 1px #000000,
+    1px 0 #000000,
+    0 -1px #000000;
+    font-weight: 700;
+
     opacity: 1 !important;
     letter-spacing: normal !important;
     color: white !important;
