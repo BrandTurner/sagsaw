@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/turnerb/.nvm/versions/node/v9.4.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js /Users/turnerb/Projects/website/node_modules/.bin/gatsby develop
+  /Users/turnerb/.nvm/versions/node/v9.4.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js gatsby build
 
 PATH: 
   /Users/turnerb/.rvm/gems/ruby-2.2.1/bin:/Users/turnerb/.rvm/gems/ruby-2.2.1@global/bin:/Users/turnerb/.rvm/rubies/ruby-2.2.1/bin:/Users/turnerb/.nvm/versions/node/v9.4.0/bin:/Users/turnerb/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/turnerb/.rvm/bin
@@ -29,7 +29,7 @@ npm manifest:
       "gatsby-plugin-offline": "^1.0.10",
       "gatsby-plugin-react-helmet": "^1.0.8",
       "gatsby-plugin-sass": "^1.0.12",
-      "gatsby-plugin-sharp": "^1.6.37",
+      "gatsby-plugin-sharp": "^1.6.41",
       "gatsby-plugin-sitemap": "^1.2.5",
       "gatsby-plugin-styled-components": "^2.0.9",
       "gatsby-plugin-twitter": "^1.0.10",
@@ -39,9 +39,9 @@ npm manifest:
       "gatsby-transformer-yaml": "^1.5.11",
       "node-sass": "^4.0.0",
       "normalize.css": "^7.0.0",
-      "nuka-carousel": "^4.0.1",
       "object-fit-images": "^3.2.3",
       "prismjs": "^1.8.1",
+      "react-alice-carousel": "^1.9.1",
       "react-async-script-loader": "^0.3.0",
       "react-collapsible": "^2.0.3",
       "react-html-parser": "^2.0.1",
@@ -49,10 +49,8 @@ npm manifest:
       "react-responsive-carousel": "^3.1.33",
       "react-reveal": "^1.2.1",
       "react-sidebar": "^2.3.2",
-      "react-slick": "^0.22.3",
       "semantic-ui-css": "^2.3.1",
       "semantic-ui-react": "^0.78.3",
-      "slick-carousel": "^1.8.1",
       "styled-components": "^3.2.3"
     },
     "devDependencies": {
@@ -2887,24 +2885,6 @@ Lockfile:
       bin-wrapper "^3.0.1"
       logalot "^2.0.0"
   
-  d3-color@1:
-    version "1.0.3"
-    resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.0.3.tgz#bc7643fca8e53a8347e2fbdaffa236796b58509b"
-  
-  d3-ease@^1.0.3:
-    version "1.0.3"
-    resolved "https://registry.yarnpkg.com/d3-ease/-/d3-ease-1.0.3.tgz#68bfbc349338a380c44d8acc4fbc3304aa2d8c0e"
-  
-  d3-interpolate@^1.1.6:
-    version "1.1.6"
-    resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-1.1.6.tgz#2cf395ae2381804df08aa1bf766b7f97b5f68fb6"
-    dependencies:
-      d3-color "1"
-  
-  d3-timer@^1.0.4:
-    version "1.0.7"
-    resolved "https://registry.yarnpkg.com/d3-timer/-/d3-timer-1.0.7.tgz#df9650ca587f6c96607ff4e60cc38229e8dd8531"
-  
   d@1:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
@@ -3204,6 +3184,10 @@ Lockfile:
   detect-libc@^1.0.2, detect-libc@^1.0.3:
     version "1.0.3"
     resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
+  
+  detect-passive-events@^1.0.4:
+    version "1.0.4"
+    resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.4.tgz#6ed477e6e5bceb79079735dcd357789d37f9a91a"
   
   detect-port-alt@1.1.3:
     version "1.1.3"
@@ -3921,7 +3905,7 @@ Lockfile:
     dependencies:
       meow "^3.1.0"
   
-  exenv@^1.2.0, exenv@^1.2.1:
+  exenv@^1.2.1:
     version "1.2.2"
     resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
   
@@ -4611,7 +4595,7 @@ Lockfile:
       sass-loader "^4.1.1"
       webpack "^1.13.3"
   
-  gatsby-plugin-sharp@^1.6.37, gatsby-plugin-sharp@^1.6.39:
+  gatsby-plugin-sharp@^1.6.39, gatsby-plugin-sharp@^1.6.41:
     version "1.6.41"
     resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.41.tgz#87dc28d226d70e63408bf31983268efdf10e8b1d"
     dependencies:
@@ -7734,15 +7718,6 @@ Lockfile:
     dependencies:
       boolbase "~1.0.0"
   
-  nuka-carousel@^4.0.1:
-    version "4.0.1"
-    resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-4.0.1.tgz#f5329d4d409dbf53dcdcdf8245d1594efa6a38fa"
-    dependencies:
-      d3-ease "^1.0.3"
-      exenv "^1.2.0"
-      prop-types "^15.6.0"
-      react-move "^2.7.0"
-  
   null-loader@^0.1.1:
     version "0.1.1"
     resolved "https://registry.yarnpkg.com/null-loader/-/null-loader-0.1.1.tgz#17be9abfcd3ff0e1512f6fc4afcb1f5039378fae"
@@ -9473,6 +9448,14 @@ Lockfile:
       minimist "^1.2.0"
       strip-json-comments "~2.0.1"
   
+  react-alice-carousel@^1.9.1:
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-1.9.1.tgz#5d68fc98d93d47b4fe8b0775550fddd053e5d381"
+    dependencies:
+      prop-types "^15.5.10"
+      react ">=15.4"
+      react-swipeable "^4.0.0"
+  
   react-async-script-loader@^0.3.0:
     version "0.3.0"
     resolved "https://registry.yarnpkg.com/react-async-script-loader/-/react-async-script-loader-0.3.0.tgz#c742b3ca25e08ba61ab7eb64371f814027692b86"
@@ -9574,13 +9557,6 @@ Lockfile:
       lodash.throttle "^4.0.0"
       prop-types "^15.5.8"
   
-  react-move@^2.7.0:
-    version "2.7.0"
-    resolved "https://registry.yarnpkg.com/react-move/-/react-move-2.7.0.tgz#8f5b3d37cc614b9de90e1e2744c80a1e3ff2fcfd"
-    dependencies:
-      d3-interpolate "^1.1.6"
-      d3-timer "^1.0.4"
-  
   react-proxy@^3.0.0-alpha.0:
     version "3.0.0-alpha.1"
     resolved "https://registry.yarnpkg.com/react-proxy/-/react-proxy-3.0.0-alpha.1.tgz#4400426bcfa80caa6724c7755695315209fa4b07"
@@ -9635,17 +9611,6 @@ Lockfile:
     version "2.3.2"
     resolved "https://registry.yarnpkg.com/react-sidebar/-/react-sidebar-2.3.2.tgz#ec140bea8a6f5fa3d8ea7a56479665b44cf4f9cf"
   
-  react-slick@^0.22.3:
-    version "0.22.3"
-    resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.22.3.tgz#667991b2496e6b10bcca2a2e676ffadf34e7d56c"
-    dependencies:
-      can-use-dom "^0.1.0"
-      classnames "^2.2.5"
-      create-react-class "^15.5.2"
-      enquire.js "^2.1.6"
-      json2mq "^0.2.0"
-      resize-observer-polyfill "^1.5.0"
-  
   react-slick@~0.21.0:
     version "0.21.0"
     resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.21.0.tgz#677548bc6bcaf6916286d3682c8283feb26a2566"
@@ -9656,6 +9621,22 @@ Lockfile:
       enquire.js "^2.1.6"
       json2mq "^0.2.0"
       object-assign "^4.1.0"
+  
+  react-swipeable@^4.0.0:
+    version "4.2.1"
+    resolved "https://registry.yarnpkg.com/react-swipeable/-/react-swipeable-4.2.1.tgz#dae68ecd041c299a9b55b4925baf940195858637"
+    dependencies:
+      detect-passive-events "^1.0.4"
+      prop-types "^15.5.8"
+  
+  react@>=15.4:
+    version "16.2.0"
+    resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+    dependencies:
+      fbjs "^0.8.16"
+      loose-envify "^1.1.0"
+      object-assign "^4.1.1"
+      prop-types "^15.6.0"
   
   react@^15.6.0:
     version "15.6.2"
@@ -10199,10 +10180,6 @@ Lockfile:
   requires-port@1.0.x, requires-port@1.x.x, requires-port@~1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
-  
-  resize-observer-polyfill@^1.5.0:
-    version "1.5.0"
-    resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.0.tgz#660ff1d9712a2382baa2cad450a4716209f9ca69"
   
   resolve-cwd@^2.0.0:
     version "2.0.0"
@@ -12636,14 +12613,16 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-1.0.2.tgz#9b059541bfa844799fe2d903bde609de2503a041"
 
 Trace: 
-  Error: Command "/Users/turnerb/Projects/website/node_modules/.bin/gatsby" not found.
-      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87307:17
-      at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12
-      at runCommand (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87312:22)
-      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87412:14)
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c /Users/turnerb/Projects/website/node_modules/.bin/gatsby build
+  Directory: /Users/turnerb/Projects/website
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:160:13)
+      at maybeClose (internal/child_process.js:943:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

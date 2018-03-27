@@ -62,8 +62,8 @@ const PTwo = styled.p`
 	font-family: 'AvantGardeLight' !important;
 	text-transform: uppercase;
 	font-weight: 900 !important;
-  letter-spacing: 0.5px !important;
-  line-height: 40px !important;
+	letter-spacing: 0.5px !important;
+	line-height: 40px !important;
 `;
 
 const HeroContent = styled.div`
@@ -110,46 +110,37 @@ const LeftAlign = styled.p`
 `;
 
 const Container = styled.div`
-position: relative;
-top: -480px;
-left: 50%
-
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 35%;
-    min-height: 430px;
-  @media(min-width: 1200 px)
-   {
-    max-width: 1220 px;
-  }
-@media(min-width: 992 px)
-   {
-    max-width: 960 px;
-  }
-@media(min-width: 768 px)
-   {
-    max-width: 720 px;
-  }
-@media(min-width: 576 px)
-   {
-    max-width: 540 px;
-  }
-@media(min-width: 1200 px)
-   {
-    max-width: 1140 px;
-  }
-@media(min-width: 992 px)
-   {
-    max-width: 960 px;
-  }
-@media(min-width: 768 px)
-   {
-    max-width: 720 px;
-  }
-@media(min-width: 576 px)
-   {
-    max-width: 540 px;
-  }
+	position: relative;
+	top: -480px;
+	left: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 35%;
+	min-height: 430px;
+	@media (min-width: 1200 px) {
+		max-width: 1220 px;
+	}
+	@media (min-width: 992 px) {
+		max-width: 960 px;
+	}
+	@media (min-width: 768 px) {
+		max-width: 720 px;
+	}
+	@media (min-width: 576 px) {
+		max-width: 540 px;
+	}
+	@media (min-width: 1200 px) {
+		max-width: 1140 px;
+	}
+	@media (min-width: 992 px) {
+		max-width: 960 px;
+	}
+	@media (min-width: 768 px) {
+		max-width: 720 px;
+	}
+	@media (min-width: 576 px) {
+		max-width: 540 px;
+	}
 `;
 
 const SlantedButton = styled.button`
@@ -164,8 +155,8 @@ const SlantedButton = styled.button`
 	-ms-transform: skewX(20deg);
 	-webkit-transform: skewX(20deg);
 	transform: skewX(20deg);
-  height: 48px !important;
-  display: block !important;
+	height: 48px !important;
+	display: block !important;
 
 	&:hover {
 		background: #c2185b;

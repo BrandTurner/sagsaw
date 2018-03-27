@@ -23,7 +23,6 @@
     "gatsby-transformer-yaml": "^1.5.11",
     "node-sass": "^4.0.0",
     "normalize.css": "^7.0.0",
-    "nuka-carousel": "^4.0.1",
     "object-fit-images": "^3.2.3",
     "prismjs": "^1.8.1",
     "react-alice-carousel": "^1.9.1",
@@ -36,7 +35,6 @@
     "react-sidebar": "^2.3.2",
     "semantic-ui-css": "^2.3.1",
     "semantic-ui-react": "^0.78.3",
-    "slick-carousel": "^1.8.1",
     "styled-components": "^3.2.3"
   },
   "devDependencies": {

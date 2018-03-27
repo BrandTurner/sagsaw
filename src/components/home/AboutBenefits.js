@@ -43,7 +43,7 @@ EcosystemCard.defaultProps = {
   big: false,
 };
 
-const AboutEcosystem = () => (
+const AboutBenefits = () => (
   <section className="home__part home__ecosystem home__sag">
     <div className="container">
       <div className="header-cta">
@@ -128,7 +128,7 @@ const AboutEcosystem = () => (
   </section>
 );
 
-export default AboutEcosystem;
+export default AboutBenefits;
 
 const StatsList = styled.ul`
 	list-style-type: circle;
@@ -146,7 +146,6 @@ const Paragraph = styled.p`
 	line-height: 30px;
 	margin-bottom: 16px;
 	margin-top: 0px;
-	text-size-adjust: 100%;
 	width: 783.328px;
 	-webkit-margin-after: 16px;
 	-webkit-margin-before: 0px;
