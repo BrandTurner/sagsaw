@@ -15,7 +15,7 @@ class StaffObject extends Component {
     this.sortBy = this.sortBy.bind(this); //  Add to util
   }
 
- 
+
 
   sortBy(field, reverse, primer) {
     const key = primer
@@ -68,7 +68,7 @@ class StaffObject extends Component {
             <span>Organizational Team</span>
           </SectionTitle>
         </TeamMembers>
-        <div className="board-flex-grid">
+        <div className="board-flex-grid" style={{margin: "0 !important"}}>
           {this.renderData()}
         </div>
       </div>
@@ -83,7 +83,7 @@ const TeamMembers = styled.div`
 `;
 
 const SectionTitle = styled.h3`
-  color: indigo;
+  color: #212121;
   font-family: 'Avenir';
   font-weight: 700;
   margin: 0 auto !important;
@@ -91,5 +91,5 @@ const SectionTitle = styled.h3`
   line-height: 1.4;
   font-size: 31px;
   float: left;
-  border-bottom: 5px solid magenta;
+  border-bottom: 5px solid #7C4DFF;
 `;

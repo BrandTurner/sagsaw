@@ -1,7 +1,6 @@
 const menu = [
   {
     text: 'about',
-    rootPath: '/about',
     submenu: [
       {
         text: 'Founder',
@@ -54,18 +53,18 @@ const menu = [
   },
    {
      text: 'partners',
-     rootpath: '/content_partners',
+     path: '/contentPartner',
      submenu: [{
          text: 'World of Money',
          path: '/wom',
        },
        {
          text: 'C-Stem',
-         path: '/c_stem',
+         path: '/cStem',
        },
        {
          text: 'Partner with Us',
-         path: '/new_partner',
+         path: '/newPartner',
        },
      ],
    },
