@@ -46,6 +46,7 @@ class TemplateWrapper extends Component {
 				</div>
 				<BurgerButton onClick={this.showMenu.bind(null, !open)} status={open ? 'close' : 'burger'} />
 				<div role="presentation" className="overlay" onClick={this.showMenu.bind(null, false)} />
+
 				<SideMenu open={open} />
 			</div>
 		);

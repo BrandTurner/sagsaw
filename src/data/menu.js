@@ -1,20 +1,25 @@
 const menu = [
   {
     text: 'about',
-    rootPath: '/docs',
+    rootPath: '/about',
     submenu: [
       {
         text: 'Founder',
         path: '/about',
       },
       {
+        text: 'Our Mission and Values',
+        path: '/mission',
+      },
+      {
         text: 'Board of Directors',
         path: '/board',
       },
       {
-        text: 'Our Mission and Values',
-        path: '/mission',
+        text: 'Staff',
+        path: '/staff',
       },
+
     ],
   },
   {
@@ -47,6 +52,24 @@ const menu = [
       },
     ],
   },
+   {
+     text: 'partners',
+     rootpath: '/content_partners',
+     submenu: [{
+         text: 'World of Money',
+         path: '/wom',
+       },
+       {
+         text: 'C-Stem',
+         path: '/c_stem',
+       },
+       {
+         text: 'Partner with Us',
+         path: '/new_partner',
+       },
+     ],
+   },
+
   {
     text: 'The Latest',
     path: '/blog',

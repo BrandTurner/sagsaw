@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import Helmet from 'react-helmet';
 import Button from 'components/common/Button';
 import Logo from 'components/layout/Logo';
-import boardInfo from './members.json';
-import BoardObject from './BoardObject';
+import staffInfo from './staff.json';
+import StaffObject from './STaffObject';
 import Sidebar from 'react-sidebar';
 import { Icon } from 'semantic-ui-react';
 
@@ -15,58 +15,9 @@ import styled from 'styled-components';
 
 const test = [];
 
-const siderStyles = {
-	root: {
-		position: 'relative',
-		top: '79px',
-		left: 0,
-		right: 0,
-		bottom: 0,
-		height: '1000px',
-		overflow: 'hidden',
-	},
-	sidebar: {
-		zIndex: 3,
-		position: 'absolute',
-		top: 0,
-		bottom: 0,
-		transition: 'transform .3s ease-out',
-		WebkitTransition: '-webkit-transform .3s ease-out',
-		willChange: 'transform',
-		overflowY: 'auto',
-		backgroundColor: 'white',
-	},
-	content: {
-		position: 'absolute',
-		top: 0,
-		left: 0,
-		right: 0,
-		bottom: 0,
-		overflowY: 'scroll',
-		WebkitOverflowScrolling: 'touch',
-		transition: 'left .3s ease-out, right .3s ease-out',
-	},
-	overlay: {
-		zIndex: 1,
-		position: 'fixed',
-		top: 0,
-		left: 0,
-		right: 0,
-		bottom: 0,
-		opacity: 0,
-		visibility: 'hidden',
-		transition: 'opacity .3s ease-out, visibility .3s ease-out',
-		backgroundColor: 'rgba(0,0,0,.3)',
-	},
-	dragHandle: {
-		zIndex: 1,
-		position: 'fixed',
-		top: 0,
-		bottom: 0,
-	},
-};
 
-class Board extends Component {
+
+class Staff extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -152,50 +103,23 @@ class Board extends Component {
 			textAlign: 'center',
 		};
 
-		const sideBarContent = (
-			<div className="sider" id="sider" ref="sider">
-				<div className="profile" onClick={this.closeSider}>
-					<TopSection>
-						<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-							<div>
-								<img src={this.state.sidebarImage || ''} className="sider-image" />
-							</div>
-							<div><Icon color="gray" size="huge" name="close"/></div>
-						</div>
-					</TopSection>
-					<div>
-						<h2 className="board-loc">{this.state.sidebarLocation}</h2>
-						<span className="about-about-desc" onClick={this.closeSider}>
-							{this.state.sidebarName || 'rar'}
-						</span>
-						<span className="about-about-board-desc">{this.state.sidebarPosition}</span>
-					</div>
-					<div className="bio" style={{ marginTop: '25px' }}>
-						<p className="about-about-desc" dangerouslySetInnerHTML={{ __html: this.state.sidebarBio }} />
-					</div>
-				</div>
-			</div>
-		);
+
 		return (
-			<Sidebar
-				sidebar={sideBarContent}
-				open={this.state.sidebarOpen}
-				onSetOpen={this.onSetSidebarOpen}
-				styles={siderStyles}
-			>
-				<section className="home__board home__ecosystem home__sag">
-					<BoardObject
-						boardJson={boardInfo}
-						setSidebarContent={this.setSidebarContent}
-						openSidebar={this.onSetSidebarOpen}
+		
+				<StaffSection className="home__board home__ecosystem home__sag">
+					<StaffObject
+						staffJson={staffInfo}
 					/>
-				</section>
-			</Sidebar>
+				</StaffSection>
 		);
 	}
 }
 
-export default Board;
+export default Staff;
+
+const StaffSection = styled.section`
+	margin-top: 35px;
+`;
 
 const Row = styled.div`
 	display: -ms-flexbox;
