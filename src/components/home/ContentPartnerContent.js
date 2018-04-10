@@ -167,7 +167,7 @@ const ContentPartnerContent = () => (
             </div>
           </TabPane>
           <TabPane tab="C-Stem" key="2">
-          
+
             <div className="media-object">
               <div className="card-text-left">
               <span className="deep-purple-text small-text row-heading">C-Stem | SAGSAW Partnership</span>
@@ -192,15 +192,15 @@ const ContentPartnerContent = () => (
                     <img src={wom} className="image" style={{ height: 250, objectFit: 'contain' }}/>
                     <p className="legend">Legend 2</p>
                 </div>
-            
+
             </Carousel>
 
 
-                
+
 
               </div>
             </div>
-            
+
 
           </TabPane>
 
