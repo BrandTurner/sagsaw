@@ -8,6 +8,8 @@ import Footer from 'components/layout/Footer';
 import SideMenu from 'components/layout/SideMenu';
 import 'styles/main.scss';
 import helmetConfig from '../helmetConfig';
+import 'semantic-ui-css/semantic.min.css';
+
 
 class TemplateWrapper extends Component {
 	state = {

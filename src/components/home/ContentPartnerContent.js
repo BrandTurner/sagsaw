@@ -11,6 +11,16 @@ import Button from 'components/common/Button';
 import gg from 'images/gg_headshot.jpg';
 import styled from 'styled-components';
 
+import {
+  Card,
+  Col,
+  Row
+} from 'antd';
+
+
+import wom from 'images/worldofmoney.png';
+import cstem from 'images/c_stem.jpg'
+
 const EcosystemCard = ({ big, image, link, text, title }) => (
 	<div className={classnames('grid__item', { full: big })}>
 		<div className={classnames('card ecosystem__card', { big })}>
@@ -56,6 +66,7 @@ const ContentPartnerContent = () => (
 			</div>
 			<div className="ecosystem__content grid__container">
 				<div className="outer">
+
 					<div className="media-object">
 						<div className="card-text-left">
 							<span className="deep-purple-text small-text row-heading">Partnering With Save a Girl Save a World</span>
@@ -65,25 +76,55 @@ const ContentPartnerContent = () => (
                 to live with dignity, not dependence.Our partners are the individuals, corporations and institutions who
                 provide the financial and human capital that allow us to take on the world’ s toughest challenges.
 							</PartnersText>
-
-
 						</div>
 						<div className="card-image">
 							<h2 className="about-desc">
 								<Spaniard>WITH DETERMINATION AND GRIT, </Spaniard>EVERYONE CAN CONTRIBUTE TO A BETTER FUTURE
-
 							</h2>
 						</div>
 					</div>
 
-					<div className="media-object" style={{ justifyContent: "flex-start" }}>
-          <h2 className="about-desc">
+         <div className="media-object">
+           <div className="card-image">
+							<h2 className="about-desc">
 								< Spaniard > PARTNER WITH US. </Spaniard>TOGETHER, WE CAN BUILD A MORE INCLUSIVE WORLD,
-
-
 							</h2>
-
+						</div>
+						<div className="card-text-right">
+							<span className="deep-purple-text small-text row-heading">Let's Work Together</span>
+							<PartnersText>
+                Our organization relies on support from partners to drive our work.Based on thoughtful conversation
+                with your organization, we’ ll develop a customized partnership to direct your donation to
+                initiatives and programs within Save A Girl Save A World. If you make a commitment to generally
+                support us, your funding will go toward our overall operation and management of our programs
+                across the country.
+							</PartnersText>
+						</div>
 					</div>
+        <div><ContentPartnersTitle>Content Partners</ContentPartnersTitle></div>
+        <ContentPartners>
+         <div style={{ background: 'white', padding: '30px' }}>
+    <Row gutter={16} style={{ backgroundColor: 'white' }}>
+      <Col span={12}>
+        <Card
+          cover={<img alt="World of Money" src={wom}   style={{ maxHeight: '250px', objectFit: 'contain', margin: '0 auto' }} />}
+          bordered={false}>
+          World of Money
+        </Card>
+      </Col>
+      <Col span={12}>
+        <Card
+          cover={<img alt="World of Money" src={cstem} style={{ maxHeight: '250px', objectFit: 'contain', margin: '0 auto' }} />}
+
+          bordered={false}>
+          C-Stem
+        </Card>
+      </Col>
+
+    </Row>
+  </div>
+        </ContentPartners>
+
 				</div>
 			</div>
 		</div>
@@ -91,6 +132,25 @@ const ContentPartnerContent = () => (
 );
 
 export default ContentPartnerContent;
+
+const ContentPartnersTitle = styled.h3`
+  color: #212121;
+  font-family: 'Avenir';
+  font-weight: 700;
+  margin: 0 auto !important;
+  margin-bottom: .5rem;
+  line-height: 1.4;
+  font-size: 31px;
+  float: left;
+  border-bottom: 5px solid #7C4DFF;
+
+`
+
+const ContentPartners = styled.div`
+  width: 1000px;
+  height: 400px;
+`;
+
 
 const Spaniard = styled.span`
 font-family: 'AvantGardeLight', sans-serif !important;
@@ -104,6 +164,16 @@ const PartnersText = styled.p`
   font-family: 'Roboto Slab', serif;
   margin-bottom: 15px;
 `;
+
+const CardText = styled.h2 `
+	margin-bottom: 40px !important;
+	margin-top: 8px !important;
+`;
+
+const Strong = styled.strong `
+	font-family: 'AvantGarde';
+`;
+
 
 const SlantedButton = styled.button`
 	-webkit-border-radius: 0;
