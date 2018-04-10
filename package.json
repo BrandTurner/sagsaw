@@ -26,6 +26,7 @@
     "nuka-carousel": "^4.0.1",
     "object-fit-images": "^3.2.3",
     "prismjs": "^1.8.1",
+    "pure-react-carousel": "^1.11.1",
     "react-alice-carousel": "^1.9.1",
     "react-async-script-loader": "^0.3.0",
     "react-collapsible": "^2.0.3",

@@ -9,7 +9,14 @@ import mediaObj2 from 'images/media-object-2.jpg';
 import schemaImage from 'images/schema_component.svg';
 import Button from 'components/common/Button';
 import gg from 'images/gg_headshot.jpg';
+
+
+import { Carousel } from 'react-responsive-carousel';
+
 import styled from 'styled-components';
+
+import { Tabs, Radio } from 'antd';
+const TabPane = Tabs.TabPane;
 
 import {
   Card,
@@ -20,6 +27,12 @@ import {
 
 import wom from 'images/worldofmoney.png';
 import cstem from 'images/c_stem.jpg'
+	const responsive = {
+	  0: {
+	    items: 1,
+	  },
+
+	};
 
 const EcosystemCard = ({ big, image, link, text, title }) => (
 	<div className={classnames('grid__item', { full: big })}>
@@ -102,29 +115,96 @@ const ContentPartnerContent = () => (
 						</div>
 					</div>
         <div><ContentPartnersTitle>Content Partners</ContentPartnersTitle></div>
-        <ContentPartners>
-         <div style={{ background: 'white', padding: '30px' }}>
-    <Row gutter={16} style={{ backgroundColor: 'white' }}>
-      <Col span={12}>
-        <Card
-          cover={<img alt="World of Money" src={wom}   style={{ maxHeight: '250px', objectFit: 'contain', margin: '0 auto' }} />}
-          bordered={false}>
-          World of Money
-        </Card>
-      </Col>
-      <Col span={12}>
-        <Card
-          cover={<img alt="World of Money" src={cstem} style={{ maxHeight: '250px', objectFit: 'contain', margin: '0 auto' }} />}
+        {/* <ContentPartners>
+                <div style={{ background: 'white', padding: '30px' }}>
+            <Row gutter={16} style={{ backgroundColor: 'white' }}>
+              <Col span={12}>
+                <Card
+                  cover={<img alt="World of Money" src={wom}   style={{ maxHeight: '250px', objectFit: 'contain', margin: '0 auto' }} />}
+                  bordered={false}>
+                  World of Money
+                </Card>
+              </Col>
+              <Col span={12}>
+                <Card
+                  cover={<img alt="World of Money" src={cstem} style={{ maxHeight: '250px', objectFit: 'contain', margin: '0 auto' }} />}
 
-          bordered={false}>
-          C-Stem
-        </Card>
-      </Col>
+                  bordered={false}>
+                  C-Stem
+                </Card>
+              </Col>
 
-    </Row>
-  </div>
-        </ContentPartners>
+            </Row>
+          </div>
+        </ContentPartners> */}
 
+        <Tabs
+          defaultActiveKey="1"
+          tabPosition="left"
+          style={{ height: 500 }}
+        >
+          <TabPane tab="World of Money" key="1">
+            <div className="media-object">
+
+              <div className="card-text-left">
+              <span className="deep-purple-text small-text row-heading">World of Money | SAGSAW Partnership</span>
+							<PartnersText>
+               World of Money allows Save A Girl Save A World to provide students with financial literacy education via on-site
+               learning, webinars and other content. A unique centerpiece of the program is the World of Money app. Our mutual goal is
+               to make students masters of basic money management. Founded in 2005 by Sabrina Lamb, WoM features a curriculum that includes
+               basic financial tools for youth, how to budget, save and invest, how to use financial technology, innovative thinking, how
+               our government works; and foreign language, culture, and travel. The content also encompasses managing loans, paying for college,
+               understanding budgets, credit cards, 401(k)s, payroll taxes and investments. More than 4000 parents and their children have successfully
+               completed the WoM program.
+							</PartnersText>
+                <SlantedButton>
+                  <SlantedButtonContent>Go to WorldofMoney.com</SlantedButtonContent>
+                </SlantedButton>
+              </div>
+              <div className="card-image">
+                <img src={wom} className="image" />
+              </div>
+            </div>
+          </TabPane>
+          <TabPane tab="C-Stem" key="2">
+          
+            <div className="media-object">
+              <div className="card-text-left">
+              <span className="deep-purple-text small-text row-heading">C-Stem | SAGSAW Partnership</span>
+							<PartnersText>
+               Our mutual goal is to provide the tools that empower students to become innovators and technologically-proficient problem solvers. Through
+               mentoring, coaching and training, we want to introduce young women to the vast array of educational and career opportunities in STEM fields.
+               Founded in 2002 by Dr. REagan Flowers, C-Stem Teacher & Student Support Services is designed to close the achievement gap by helping students learn
+               and experience communication, science, technology, engineeering, and mathematics through innovation that exposes these concepts through a myriad of
+               disciplines. These include robotics, geoscience, 3D printing, film-making, photography, sculpture, mural painting, creative writing and photography
+							</PartnersText>
+                <SlantedButton>
+                  <SlantedButtonContent>Go to C-Stem's Site</SlantedButtonContent>
+                </SlantedButton>
+              </div>
+              <div className="card-image">
+                <Carousel autoPlay showArrows={false} infiniteLoop showThumbs={false}>
+                <div>
+                    <img src={cstem} className="image" style={{ height: 250, objectFit: 'contain' }}/>
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={wom} className="image" style={{ height: 250, objectFit: 'contain' }}/>
+                    <p className="legend">Legend 2</p>
+                </div>
+            
+            </Carousel>
+
+
+                
+
+              </div>
+            </div>
+            
+
+          </TabPane>
+
+        </Tabs>
 				</div>
 			</div>
 		</div>
@@ -194,6 +274,13 @@ const SlantedButton = styled.button`
 		text-decoration: none;
 	}
 `;
+
+const CarouselContainer = styled.div `
+    height: 459px;
+    width: 100%;
+    position: relative;
+`;
+
 
 const SlantedButtonContent = styled.span`
 	-ms-transform: skewX(-20deg);
