@@ -1,0 +1,40 @@
+{
+  "staff": [
+    {
+      "position": "Founder & CEO",
+      "location": "Los Angeles, CA",
+      "name": "Glenda Gill",
+      "image": "aishaH.png",
+      "email": "gg@sagsaw.org"
+    },
+    {
+      "position": "Mentor | Mentee Coordinator",
+      "location": "Dallas, TX",
+      "name": "Aisha Habeeb",
+      "image": "aishaH.png",
+      "email": "aisha@sagsaw.org"
+    },
+    {
+      "name": "K. Camille Wilbourn",
+      "image": "sheilaCoates.png",
+      "location": "Dallas, TX",
+      "position": "Board Development Coordinator | Infrastructure",
+      "email": "help@sagsaw.org"      
+    },
+    {
+      "name": "Linda K. Brown",
+      "image": "sheilaCoates.png",
+      "location": "Dallas, TX",
+      "position": "Public Relations Coordination & Support",
+      "email": "help@sagsaw.org"  
+    },
+    {
+      "name": "Antonette Bruno",
+      "image": "sheilaCoates.png",
+      "location": "Dallas, TX",
+      "position": "Infrastructure & Development",
+      "email": "help@sagsaw.org"  
+    }
+  ]
+}
+

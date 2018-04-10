@@ -28,6 +28,7 @@ class Footer extends Component {
 							</form>
 						</ColumnSpan>
 					</Row>
+
 					<BottomRow>
 						<ColumnSpanTwo>
 							<FooterLogo src={Sag_Logo} />
@@ -235,8 +236,7 @@ const FooterLink = styled.a`
 	transition-timing-function: ease-in-out;
 	vertical-align: middle;
 	white-space: nowrap;
-  -moz-user-select: none;
-  user-select: none;
+	-moz-user-select: none;
 `;
 
 const TopNav = styled.div`
@@ -367,6 +367,7 @@ const ColumnSpanTen = styled.div`
 const FooterLogo = styled.img`
 	width: auto;
 	height: 100%;
+	vertical-align: middle;
 	border-style: none;
 	display: block;
 `;

@@ -4,9 +4,12 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import Header from 'components/layout/Header';
 import BurgerButton from 'components/layout/BurgerButton';
+import Footer from 'components/layout/Footer';
 import SideMenu from 'components/layout/SideMenu';
 import 'styles/main.scss';
 import helmetConfig from '../helmetConfig';
+import 'semantic-ui-css/semantic.min.css';
+
 
 class TemplateWrapper extends Component {
 	state = {
@@ -41,9 +44,11 @@ class TemplateWrapper extends Component {
 					<Helmet {...helmetConfig.head} />
 					<Header />
 					<div className={classNames('page openable', { 'with-footer': withFooter })}>{children()}</div>
+					<Footer />
 				</div>
 				<BurgerButton onClick={this.showMenu.bind(null, !open)} status={open ? 'close' : 'burger'} />
 				<div role="presentation" className="overlay" onClick={this.showMenu.bind(null, false)} />
+
 				<SideMenu open={open} />
 			</div>
 		);

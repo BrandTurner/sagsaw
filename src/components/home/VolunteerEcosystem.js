@@ -47,7 +47,7 @@ const VolunteerEcosystem = () => (
 							</Description>
 							<ButtonGroup>
 								<Button color="violet" size="massive">
-									Apply for Mentorship <Icon name="long arrow right" />
+									Apply for Mentorship <Icon color="white" name="long arrow right" />
 								</Button>
 							</ButtonGroup>
 						</Volunteer>
@@ -148,7 +148,7 @@ const VolunteerEcosystem = () => (
                   <Image src={BrookeAvatar} size='small' circular style={{marginBottom: 30}} />
 
                   <DescriptionTwo>
-                    Entrepreneur game-changer catalyze vibrant theory of change shared vocabulary strategize parse parse. Outcomes issue outcomes co-create resist shine impact to. Thought partnership; segmentation, movements state of play think tank paradigm efficient do-gooder. Change-makers, philanthropy accessibility co-create academic granular we must stand up mobilize. Academic venture philanthropy paradigm inspiring cultivate entrepreneur blended value systems thinking dynamic. Change-makers shine, blended value resist, social impact; problem-solvers, shine initiative white paper. Outcomes because peaceful living a fully ethical life because save the world. Inspire empathetic, shine thought leadership, energize mobilize empower. Blended value outcomes strengthening infrastructure movements resilient. Equal opportunity; progress; and scalable ideate.
+                    Entrepreneur game-changer catalyze vibrant theory of change shared vocabulary strategize parse parse. Outcomes issue outcomes co-create resist shine impact to. Thought partnership; segmentation, movements state of play think tank paradigm efficient do-gooder. Change-makers, philanthropy accessibility co-create academic granular we must stand up mobilize. Academic venture philanthropy paradigm inspiring cultivate entrepreneur blended value systems thinking dynamic. Change-makers shine, blended value resist, social impact; problem-solvers, shine initiative white paper. Outcomes because peaceful living a fully ethical life because save the world. Inspire empathetic, shine thought leadership, energize mobilize empower. Blended value outcomes strengthening infrastructure movements resilient. Equal opportunity; progress; and scalable ideate. 
                   </DescriptionTwo>
                   <HighlightAuthor>
                     <UpperCase>Michonne Grimes</UpperCase>
@@ -160,7 +160,7 @@ const VolunteerEcosystem = () => (
                      <Image src={AishaAvatar} size='small' circular style={{marginBottom: 30}} />
 
                   <DescriptionTwo>
-                    Entrepreneur game-changer catalyze vibrant theory of change shared vocabulary strategize parse parse. Outcomes issue outcomes co-create resist shine impact to. Thought partnership; segmentation, movements state of play think tank paradigm efficient do-gooder. Change-makers, philanthropy accessibility co-create academic granular we must stand up mobilize. Academic venture philanthropy paradigm inspiring cultivate entrepreneur blended value systems thinking dynamic. Change-makers shine, blended value resist, social impact; problem-solvers, shine initiative white paper. Outcomes because peaceful living a fully ethical life because save the world. Inspire empathetic, shine thought leadership, energize mobilize empower. Blended value outcomes strengthening infrastructure movements resilient. Equal opportunity; progress; and scalable ideate.
+                    Entrepreneur game-changer catalyze vibrant theory of change shared vocabulary strategize parse parse. Outcomes issue outcomes co-create resist shine impact to. Thought partnership; segmentation, movements state of play think tank paradigm efficient do-gooder. Change-makers, philanthropy accessibility co-create academic granular we must stand up mobilize. Academic venture philanthropy paradigm inspiring cultivate entrepreneur blended value systems thinking dynamic. Change-makers shine, blended value resist, social impact; problem-solvers, shine initiative white paper. Outcomes because peaceful living a fully ethical life because save the world. Inspire empathetic, shine thought leadership, energize mobilize empower. Blended value outcomes strengthening infrastructure movements resilient. Equal opportunity; progress; and scalable ideate. 
                   </DescriptionTwo>
                   <HighlightAuthor>
                     <UpperCase>Michaela Burnham</UpperCase>
@@ -169,15 +169,15 @@ const VolunteerEcosystem = () => (
                   </CarouselBG>
 							</Carousel>
 						</VolunteerTwo>
-					</Testimonial>
+					</Testimonial> 
 
 
           <ButtonGroup>
 								<Button color="violet" size="massive" style={{textTransform: "uppercase", letterSpacing: 2}}>
-									Apply for Mentorship <Icon name="long arrow right" />
+									Apply for Mentorship <Icon color="white" name="long arrow right" />
 								</Button>
                 <Button color="violet" size="massive" style={{textTransform: "uppercase", letterSpacing: 2}}>
-									Join Our Mailing List <Icon name="long arrow right" />
+									Join Our Mailing List <Icon color="white" name="long arrow right" />
 								</Button>
 					</ButtonGroup>
 				</div>

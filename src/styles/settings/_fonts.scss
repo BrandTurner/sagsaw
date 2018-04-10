@@ -50,4 +50,11 @@ $fontTitle: 'Roboto Slab', Courier, serif;
   url("./settings/fonts/ITCAvantGardePro-XLt.woff") format('woff');
 }
 
+@font-face {
+  font-family: 'AvantGardeDemi';
+  src: url('./settings/fonts/AvantGardeDemi.otf') format('opentype'),
+  url('./settings/fonts/AvantGardeDemi.ttf') format('truetype');
+}
+
+
 
