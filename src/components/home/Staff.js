@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import Button from 'components/common/Button';
 import Logo from 'components/layout/Logo';
 import staffInfo from './staff.json';
-import StaffObject from './STaffObject';
+import StaffObject from './StaffObject';
 import Sidebar from 'react-sidebar';
 import { Icon } from 'semantic-ui-react';
 
