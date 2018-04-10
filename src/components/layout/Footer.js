@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Icon } from 'antd';
-import { Icon as IconSemantic } from 'semantic-ui-react';
 import Sag_Logo from 'images/SaveAGirl-logo-128.png';
 
 class Footer extends Component {
@@ -28,7 +27,6 @@ class Footer extends Component {
 							</form>
 						</ColumnSpan>
 					</Row>
-
 					<BottomRow>
 						<ColumnSpanTwo>
 							<FooterLogo src={Sag_Logo} />
@@ -166,7 +164,6 @@ const SocialLink = styled.a`
 	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	cursor: pointer;
 `;
 
 const FooterLink = styled.a`
@@ -204,7 +201,6 @@ const FooterLink = styled.a`
 	box-shadow: none;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
-	cursor: pointer;
 	display: inline-block;
 	font-family: 'AvantGarde';
 	font-size: 16px;
@@ -236,7 +232,6 @@ const FooterLink = styled.a`
 	transition-timing-function: ease-in-out;
 	vertical-align: middle;
 	white-space: nowrap;
-	-moz-user-select: none;
 `;
 
 const TopNav = styled.div`
@@ -288,7 +283,6 @@ const SkewedInput = styled.input`
 	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
-	cursor: text;
 `;
 
 const SkewedButton = styled.button`
@@ -318,7 +312,7 @@ const SkewedListLink = styled.a`
 	display: block;
 	text-decoration: none;
 	padding: 5px 10px;
-	font: 30px/1 sans-serif;
+	font: 30px 1 sans-serif;
 	transform: skew(-20deg); /* INVERSE SKEW */
 	color: #0bf;
 `;
@@ -367,7 +361,6 @@ const ColumnSpanTen = styled.div`
 const FooterLogo = styled.img`
 	width: auto;
 	height: 100%;
-	vertical-align: middle;
 	border-style: none;
 	display: block;
 `;

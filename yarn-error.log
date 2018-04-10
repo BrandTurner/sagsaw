@@ -2,7 +2,11 @@ Arguments:
   /home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/bin/node /home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/bin/yarn gatsby build
 
 PATH: 
+<<<<<<< HEAD
   /home/FullMetalAlcoholic/bin:/home/FullMetalAlcoholic/.local/bin:/home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+=======
+  /Users/turnerb/.rvm/gems/ruby-2.2.1/bin:/Users/turnerb/.rvm/gems/ruby-2.2.1@global/bin:/Users/turnerb/.rvm/rubies/ruby-2.2.1/bin:/Users/turnerb/.nvm/versions/node/v9.4.0/bin:/Users/turnerb/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/turnerb/.rvm/bin
+>>>>>>> 90ade214682ba24404ae91e0a7f2ab7ea74a7f82
 
 Yarn version: 
   1.5.1
