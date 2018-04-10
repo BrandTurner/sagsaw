@@ -2,7 +2,7 @@ Arguments:
   /Users/turnerb/.nvm/versions/node/v9.4.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js gatsby build
 
 PATH: 
-  /Users/turnerb/.rvm/gems/ruby-2.2.1@global/bin:/Users/turnerb/.rvm/gems/ruby-2.2.1/bin:/Users/turnerb/.rvm/rubies/ruby-2.2.1/bin:/Users/turnerb/.rvm/bin:/Users/turnerb/.nvm/versions/node/v9.4.0/bin:/Users/turnerb/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+  /Users/turnerb/.rvm/gems/ruby-2.2.1/bin:/Users/turnerb/.rvm/gems/ruby-2.2.1@global/bin:/Users/turnerb/.rvm/rubies/ruby-2.2.1/bin:/Users/turnerb/.nvm/versions/node/v9.4.0/bin:/Users/turnerb/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/turnerb/.rvm/bin
 
 Yarn version: 
   1.5.1
