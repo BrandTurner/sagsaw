@@ -141,7 +141,7 @@ const ContentPartnerContent = () => (
         <Tabs
           defaultActiveKey="1"
           tabPosition="left"
-          style={{ height: 500 }}
+          style={{ minHeight: 500 }}
         >
           <TabPane tab="World of Money" key="1">
             <div className="media-object">
@@ -183,7 +183,7 @@ const ContentPartnerContent = () => (
                 </SlantedButton>
               </div>
               <div className="card-image">
-                <Carousel autoPlay showArrows={false} infiniteLoop showThumbs={false}>
+                {/* <Carousel autoPlay showArrows={false} infiniteLoop showThumbs={false}>
                 <div>
                     <img src={cstem} className="image" style={{ height: 250, objectFit: 'contain' }}/>
                     <p className="legend">Legend 1</p>
@@ -193,8 +193,8 @@ const ContentPartnerContent = () => (
                     <p className="legend">Legend 2</p>
                 </div>
 
-            </Carousel>
-
+            </Carousel> */}
+                <img src={cstem} className="image" />
 
 
 
