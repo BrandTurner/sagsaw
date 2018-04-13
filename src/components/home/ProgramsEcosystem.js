@@ -143,12 +143,10 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
               <div className="card-text-left">
               <span className="deep-purple-text small-text row-heading">College Ambassador Program</span>
 							<PartnersText>
-               Our mutual goal is to provide the tools that empower students to become innovators and technologically-proficient problem solvers. Through
-               mentoring, coaching and training, we want to introduce young women to the vast array of educational and career opportunities in STEM fields.
-               Founded in 2002 by Dr. REagan Flowers, C-Stem Teacher & Student Support Services is designed to close the achievement gap by helping students learn
-               and experience communication, science, technology, engineeering, and mathematics through innovation that exposes these concepts through a myriad of
-               disciplines. These include robotics, geoscience, 3D printing, film-making, photography, sculpture, mural painting, creative writing and photography
-							</PartnersText>
+              This program consists of college students who are involved in providing services, programs, and activities that are
+              available to help middle and high school students' classroom experience, facilitate their personal and academic growth and address the
+              needs of the student.
+              							</PartnersText>
                 <SlantedButton>
                   <SlantedButtonContent>Go to C-Stem's Site</SlantedButtonContent>
                 </SlantedButton>
@@ -180,13 +178,8 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
               <div className="card-text-left">
               <span className="deep-purple-text small-text row-heading">SAGSAW Webinar Series</span>
 							<PartnersText>
-               World of Money allows Save A Girl Save A World to provide students with financial literacy education via on-site
-               learning, webinars and other content. A unique centerpiece of the program is the World of Money app. Our mutual goal is
-               to make students masters of basic money management. Founded in 2005 by Sabrina Lamb, WoM features a curriculum that includes
-               basic financial tools for youth, how to budget, save and invest, how to use financial technology, innovative thinking, how
-               our government works; and foreign language, culture, and travel. The content also encompasses managing loans, paying for college,
-               understanding budgets, credit cards, 401(k)s, payroll taxes and investments. More than 4000 parents and their children have successfully
-               completed the WoM program.
+               The SAGSAW Webinar Series is a 3-month series of webinars. Each webinar will cover a topic such as: Financial Literacy, Creating Your Brand
+               and Political Activism. The one-hour webinars will alloow mentees to learn necessary skills wi
 							</PartnersText>
                 <SlantedButton>
                   <SlantedButtonContent>Go to WorldofMoney.com</SlantedButtonContent>

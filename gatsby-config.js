@@ -12,7 +12,8 @@ module.exports = {
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-catch-links',
 		'gatsby-plugin-react-helmet',
-		'gatsby-plugin-sass',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-netlify',
 		'gatsby-plugin-sitemap',
 		'gatsby-plugin-twitter',
 		{
