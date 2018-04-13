@@ -8,7 +8,7 @@ const BoardPage = () => (
 	<div className="home">
 		<Helmet title="The Board" />
     <BoardCover />
-  <Board />
+    <Board />
 	</div>
 );
 
