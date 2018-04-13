@@ -137,7 +137,8 @@ const ContentPartnerContent = () => (
             </Row>
           </div>
         </ContentPartners> */}
-
+        <Row>
+              <Col className="gutter-row" span={24}>
         <Tabs
           defaultActiveKey="1"
           tabPosition="left"
@@ -205,6 +206,8 @@ const ContentPartnerContent = () => (
           </TabPane>
 
         </Tabs>
+        </Col>
+        </Row>
 				</div>
 			</div>
 		</div>

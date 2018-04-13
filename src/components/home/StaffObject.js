@@ -62,16 +62,12 @@ class StaffObject extends Component {
 
   render() {
     return (
-      <div style={{marginLeft: '100px' }}>
-        <TeamMembers>
-          <SectionTitle>
-            <span>Organizational Team</span>
-          </SectionTitle>
-        </TeamMembers>
+
+
         <div className="board-flex-grid" style={{margin: "0 !important"}}>
           {this.renderData()}
         </div>
-      </div>
+
     );
   }
 }
@@ -81,6 +77,17 @@ export default StaffObject;
 const TeamMembers = styled.div`
    margin: auto !important;
 `;
+
+const DisplaySection = styled.section `
+	font-family: 'AvantGardeDemi';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #e91e63;
+	font-size: 48px;
+	padding-top: 50px;
+`;
+
 
 const SectionTitle = styled.h3`
   color: #212121;

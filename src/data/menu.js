@@ -23,7 +23,7 @@ const menu = [
   },
   {
     text: 'programs',
-    path: 'https://demo.api-platform.com/',
+    path: '/programs',
   },
   {
     text: 'get involved',
