@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/turnerb/.nvm/versions/node/v9.4.0/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js gatsby develop
+  /home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/bin/node /home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/bin/yarn gatsby build
 
 PATH: 
-  /Users/turnerb/.rvm/gems/ruby-2.2.1/bin:/Users/turnerb/.rvm/gems/ruby-2.2.1@global/bin:/Users/turnerb/.rvm/rubies/ruby-2.2.1/bin:/Users/turnerb/.nvm/versions/node/v9.4.0/bin:/Users/turnerb/.rbenv/shims:/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/turnerb/.rvm/bin
+  /home/FullMetalAlcoholic/bin:/home/FullMetalAlcoholic/.local/bin:/home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   1.5.1
@@ -11,11 +11,11 @@ Node version:
   9.4.0
 
 Platform: 
-  darwin x64
+  linux x64
 
 npm manifest: 
   {
-    "name": "api-platform-website",
+    "name": "SAGSAW",
     "license": "MIT",
     "dependencies": {
       "antd": "^3.3.0",
@@ -12704,13 +12704,13 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c /Users/turnerb/Projects/website/node_modules/.bin/gatsby develop
-  Directory: /Users/turnerb/Projects/website
+  Arguments: -c /var/www/html/sagSite/node_modules/.bin/gatsby build
+  Directory: /var/www/html/sagSite
   Output:
   
-      at ProcessTermError.MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at new ProcessTermError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:30281:17)
+      at ProcessTermError.MessageError (/home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/home/FullMetalAlcoholic/.nvm/versions/node/v9.4.0/lib/node_modules/yarn/lib/cli.js:30281:17)
       at ChildProcess.emit (events.js:160:13)
       at maybeClose (internal/child_process.js:943:16)
       at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)
