@@ -28,6 +28,22 @@
   min-width:360px;
 }
 
+.ant-tabs-tab {
+  background-color: #e8e8e8;
+  color: #e52d87 !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  position: relative !important;
+  border-bottom: 1px #a9a9a9 solid !important;
+  margin: 0 !important;
+  padding: 20px !important;
+  text-align: left !important;
+}
+
+.ant-tabs-tab-active {
+  background-color: #a9a9a9 !important;
+}
+
 .about-desc {
   display: block;
   font-size: 32px;

@@ -9,6 +9,7 @@ import mediaObj2 from 'images/media-object-2.jpg';
 import schemaImage from 'images/schema_component.svg';
 import Button from 'components/common/Button';
 import gg from 'images/gg_headshot.jpg';
+import carrot from 'images/carat.png';
 import styled from 'styled-components';
 import { Icon } from 'antd';
 
@@ -118,18 +119,18 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
           tabPosition="left"
           style={{ minHeight: 500 }}
         >
-          <TabPane tab="Summer Retreat" key="1">
+          <TabPane tab="Summer Retreat" key="1" >
             <div className="media-object" style={{ marginTop: 0, marginBottom: 0}} >
 
               <div className="card-text-left">
-              <span className="deep-purple-text small-text row-heading">Save A Girl, Save A World Summer Retreat</span>
+              <span className = "small-text row-heading" style = {{ color: "#e52d87" }}>Save A Girl, Save A World Summer Retreat</span>
 							<PartnersText>
                An annual event that involves an "arms around" environment where targeted participants are triad-paired with professional women for a 3-day summit that
                fosters growth and bonding. Workshops are conducted throughout the weekend covering topics related to the four pillars: wealth building,
                healthy living, career, and goal setting.
 							</PartnersText>
                 <SlantedButton>
-                  <SlantedButtonContent>Go to WorldofMoney.com</SlantedButtonContent>
+                  <SlantedButtonContent>Summer Retreat Gallery</SlantedButtonContent>
                 </SlantedButton>
               </div>
               <div className="card-image">
@@ -141,14 +142,14 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
 
             <div className="media-object" style={{ marginTop: 0, marginBottom: 0}}>
               <div className="card-text-left">
-              <span className="deep-purple-text small-text row-heading">College Ambassador Program</span>
+              <span className = "small-text row-heading" style = {{ color: "#e52d87" }}>College Ambassador Program</span>
 							<PartnersText>
               This program consists of college students who are involved in providing services, programs, and activities that are
               available to help middle and high school students' classroom experience, facilitate their personal and academic growth and address the
               needs of the student.
               							</PartnersText>
                 <SlantedButton>
-                  <SlantedButtonContent>Go to C-Stem's Site</SlantedButtonContent>
+                  <SlantedButtonContent>C-Stem Gallery</SlantedButtonContent>
                 </SlantedButton>
               </div>
               <div className="card-image">
@@ -173,16 +174,20 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
 
           </TabPane>
           <TabPane tab="Webinar Series" key="3">
+
             <div className="media-object" style={{ marginTop: 0, marginBottom: 0}}>
 
               <div className="card-text-left">
-              <span className="deep-purple-text small-text row-heading">SAGSAW Webinar Series</span>
+              <span className = "small-text row-heading" style = {{ color: "#e52d87" }}>SAGSAW Webinar Series</span>
 							<PartnersText>
                The SAGSAW Webinar Series is a 3-month series of webinars. Each webinar will cover a topic such as: Financial Literacy, Creating Your Brand
-               and Political Activism. The one-hour webinars will alloow mentees to learn necessary skills wi
+               and Political Activism. The one-hour webinars will allow mentees to learn necessary skills within the various topics and
+               allow them to interact, ask questions and walk away with assignments that will assist them in applying what they have learned. By taking
+               part in the webinars and completing the various assignments, the mentees will also gain eligibility to win prizes at the Annual
+               SAGSAW Retreat.
 							</PartnersText>
-                <SlantedButton>
-                  <SlantedButtonContent>Go to WorldofMoney.com</SlantedButtonContent>
+              <SlantedButton>
+                  <SlantedButtonContent>Webinar Gallery</SlantedButtonContent>
                 </SlantedButton>
               </div>
               <div className="card-image">
@@ -206,9 +211,18 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
 
 export default ProgramsEcosystem;
 
-
-
-
+const Carat = styled.span`
+  width: 20px;
+  display: block;
+  background-image: url(${carrot});
+  background-position: left center;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -19px;
+  height: 100%;
+  top: 0;
+`
 
 const ApplyLink = styled.a`
   color: #e52d87;
@@ -233,7 +247,7 @@ text-transform: uppercase;
     line-height: 130%;
     font-size: 15px;
     margin-bottom: 16px;
-      color: #212121
+      color: #212121;
 `;
 
 const SnapshotText = styled.div`
@@ -242,16 +256,16 @@ const SnapshotText = styled.div`
   letter-spacing: .54px;
   font-family : 'Avenir';
   margin-bottom: 15px;
-    color: #212121
+    color: #212121;
 `;
 
 const SnapshotTextP = styled.p `
   font-size: 15px;
   line-height: 22px;
   letter-spacing: .54px;
-  font-family: 'Avenir';
+  font-family: 'Roboto Slab';
   margin-bottom: 15px;
-  color: #212121
+  color: #212121;
 `;
 
 

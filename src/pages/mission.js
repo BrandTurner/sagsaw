@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Mission from 'components/home/AboutBenefits';
+import Mission from 'components/home/Mission';
 
 const MissionPage = () => (
 	<div className="home">
