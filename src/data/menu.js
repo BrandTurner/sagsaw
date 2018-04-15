@@ -54,19 +54,6 @@ const menu = [
    {
      text: 'partners',
      path: '/contentPartner',
-     submenu: [{
-         text: 'World of Money',
-         path: '/wom',
-       },
-       {
-         text: 'C-Stem',
-         path: '/cStem',
-       },
-       {
-         text: 'Partner with Us',
-         path: '/newPartner',
-       },
-     ],
    },
 
   {

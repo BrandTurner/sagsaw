@@ -27,7 +27,9 @@ const Header = () => (
 		<nav className="header__nav">{nav}</nav>
 		<nav className="header__nav" style={{ marginRight: 25 }}>
 			<SlantedButton>
-				<SlantedButtonContent>Donate</SlantedButtonContent>
+				<a href='https://www.paypal.com/donate/?token=rE2PS0459f1clT3P637nDDe3wMUjHOh7ujALV-t0FmZpWhEBpilDMyqz2cVpgwVTSMA6km&country.x=US&locale.x=US' target='_blank'>
+          <SlantedButtonContent>Donate</SlantedButtonContent>
+        </a>
 			</SlantedButton>
 		</nav>
 		<nav className="header__social">
