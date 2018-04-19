@@ -42,6 +42,10 @@ const menu = [
         path: '/volunteer',
       },
       {
+        text: 'Scholarship',
+        path: 'Scholarship',
+      },
+      {
         text: 'Testimonials',
         path: '/',
       },

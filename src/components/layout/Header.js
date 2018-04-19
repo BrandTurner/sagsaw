@@ -71,4 +71,5 @@ const SlantedButtonContent = styled.span`
 	font-family: 'AvantGarde';
 	font-weight: 900;
 	text-transform: uppercase;
+  color: #FFFFFF;
 `;
