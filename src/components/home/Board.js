@@ -18,7 +18,7 @@ const test = [];
 const siderStyles = {
 	root: {
 		position: 'relative',
-		top: '79px',
+		top: 0,
 		left: 0,
 		right: 0,
 		bottom: 0,

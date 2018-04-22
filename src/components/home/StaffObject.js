@@ -37,7 +37,7 @@ class StaffObject extends Component {
   renderData() {
     const { staffJson, setSidebarContent } = this.props;
 
-    staffJson.staff.sort(this.sortBy('name', false, a => a.toUpperCase()));
+    //staffJson.staff.sort(this.sortBy('name', false, a => a.toUpperCase()));
 
     return staffJson.staff.map((board, index) => {
       const backgroundImgStyle = {

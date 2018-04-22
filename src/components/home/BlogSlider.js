@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { Carousel } from 'antd';
+import './BlogSlider.css';
 
 import styled from 'styled-components';
 
@@ -26,54 +28,53 @@ class BlogSlider extends Component {
 		console.log('Slide`s position after changes: ', e.slide);
 	}
 
-	renderThumbs = () => (
-		<ul>
-			{[1, 2, 3, 4, 5].map((item, i) => (
-				<li key={i} onClick={() => this.Carousel._onDotClick(i)}>
-					Thumb {item}
-				</li>
-			))}
-		</ul>
-	);
-
 	render() {
 		const responsive = {
 			0: {
 				items: 1,
 			},
-			600: {
+			2000: {
 				items: 2,
 			},
-			1024: {
+			2400: {
 				items: 3,
 			},
 		};
 		return (
+      <div>
 			<section className="home__about_cover">
 				<Container>
+          <DisplaySection>IN THE NEWS</DisplaySection>
           <CarouselContainer>
 					<AliceCarousel
-						duration={400}
+						duration={1000}
 						autoPlay={true}
-						startIndex={1}
+            startIndex={1}
+            dotsDisabled={true}
+            buttonsDisabled={true}
 						fadeOutAnimation={true}
 						mouseDragEnabled={true}
 						playButtonEnabled={true}
 						responsive={responsive}
 						autoPlayInterval={2000}
-						autoPlayDirection="rtl"
-						autoPlayActionDisabled={true}
+						autoPlayDirection="ltr"
+						autoPlayActionDisabled={false}
 						onSlideChange={this.onSlideChange}
 						onSlideChanged={this.onSlideChanged}
 					>
-						<img src="http://via.placeholder.com/1024x589" />
-						<img src="http://via.placeholder.com/1024x589" />
-						<img src="http://via.placeholder.com/1024x589" />
+						<img src="http://via.placeholder.com/200x200" />
+						<img src="http://via.placeholder.com/201x201" />
+						<img src="http://via.placeholder.com/202x202" />
 					</AliceCarousel>
-          </CarouselContainer>
-
+          </CarouselContainer>          
 				</Container>
 			</section>
+      <Container>
+         <DisplaySection>IN THE NEWS</DisplaySection>
+
+  <div>hi</div>
+      </Container>
+      </div>
 		);
 	}
 }
@@ -81,19 +82,32 @@ class BlogSlider extends Component {
 export default BlogSlider;
 
 const CarouselContainer = styled.div`
-    height: 459px;
+    height: 300px;
     width: 100%;
     position: relative;
- 
+    margin-bottom: 0;
+    padding-bottom: 0;
+
 `
-// background-position: center center;
-//     background-size: cover;
+
+const DisplaySection = styled.section `
+	font-family: 'AvantGardeDemi';
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: #e91e63;
+	font-size: 48px;
+  padding-top: 50px;
+  text-align: left;
+`;
+
 const Container = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 15px;
 	padding-left: 15px;
-	width: 100%;
+  width: 100%;
+  max-width: 1220px;
 `;
 
 const BlogHeader = styled.h1`

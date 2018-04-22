@@ -30,11 +30,19 @@ const Mission = () => (
       <div className="ecosystem__content grid__container">
         <div className="outer">
          <SnapshotContainer>
-           <DisplaySection>OUR MISSION AND VALUES</DisplaySection>
+           <DisplaySection>VISION, MISSION AND VALUES</DisplaySection>
             <Row>
               <Col className="gutter-row" span={24}>
 
               <SnapshotText>
+                <SnapshotTextP>
+                  	We aim to be conduits of change for young women by focusing on four pillars, wealth,
+								life skills, careers and health & wellness, our mission is to provide education and
+								awareness by sharing successful life experiences through mentoring that brings together
+								several generations of young girls and women whose life experiences transcend time.
+								Through these mentor relationships we ensure that young girls are equipped with a
+								healthy self-image to contribute to social importance and personal development.
+                </SnapshotTextP>
                 <SnapshotTextP>
                   Save a Girl, Save a World (SAGSAW) is a multi-generational mentoring and esteem building program with an annual
                   retreat held at HBCU's each Fall for the purposes of assisting young girls and young women with a continued pipeline of support through mentorship.

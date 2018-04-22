@@ -15,6 +15,17 @@ class Partners extends Component {
 		return (
 			<div className="home__partners gray-background">
 				<div className="outer">
+        <CarouselProvider
+        naturalSlideWidth={100}
+        naturalSlideHeight={125}
+        totalSlides={3}
+      >
+        <Slider>
+          <Slide index={0}>I am the first Slide.</Slide>
+          <Slide index={1}>I am the second Slide.</Slide>
+          <Slide index={2}>I am the third Slide.</Slide>
+        </Slider>
+      </CarouselProvider>
 					<div className="media-object gray-background">
 						<div className="grid-wrapper">
 							<div className="grid-box a">

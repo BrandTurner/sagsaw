@@ -11,6 +11,21 @@ import Button from 'components/common/Button';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
+// import AliceCarousel from 'react-alice-carousel';
+
+const responsive = {
+  0: {
+    items: 1
+  },
+  600: {
+    items: 2
+  },
+  1024: {
+    items: 3
+  }
+};
+
+
 const Ecosystem = () => (
 	<section className="home__part home__ecosystem home__sag" style={{paddingBottom: 0}}>
 		<div className="container">
@@ -41,6 +56,25 @@ const Ecosystem = () => (
               </div>
             </div>
           </Fade>
+
+
+           {/* <AliceCarousel
+  //             duration={400}
+  //             autoPlay={true}
+  //             startIndex = {1}
+  //             fadeOutAnimation={true}
+  //             mouseDragEnabled={true}
+  //             playButtonEnabled={true}
+  //             responsive={responsive}
+  //             autoPlayInterval={2000}
+  //             autoPlayDirection="rtl"
+  //             autoPlayActionDisabled={true}
+  //           >
+  //   <div>Hello World</div>
+  //   <div>Hello World</div>
+  //   <div>Hello World</div>
+  // </AliceCarousel> */}
+
 
           <Fade right>
             <div className="media-object">

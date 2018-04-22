@@ -33,9 +33,18 @@ const Header = () => (
 			</SlantedButton>
 		</nav>
 		<nav className="header__social">
-			<Icon type="facebook" style={{ fontSize: 32, color: '#C2185B' }} />
-			<Icon type="instagram" style={{ fontSize: 32, color: '#C2185B' }} />
-			<Icon type="youtube" style={{ fontSize: 32, color: '#C2185B' }} />
+			<a href="https://www.facebook.com/saveagirlsaveaworld.org/" target="_blank">
+        <Icon type="facebook" style={{ fontSize: 32, color: '#C2185B' }} />
+      </a>
+			<a href="https://www.instagram.com/saveagirl_saveaworld/" target="_blank">
+        <Icon type="instagram" style={{ fontSize: 32, color: '#C2185B' }} />
+      </a>
+      <a href="https://twitter.com/SaveAGirl1" target="_blank">
+        <Icon type="twitter" style={{ fontSize: 32, color: '#C2185B' }} />
+      </a>
+			<a href="https://www.youtube.com/channel/UCp86DKsgKhtbv2usEn9Fstw" target="_blank">
+        <Icon type="youtube" style={{ fontSize: 32, color: '#C2185B' }} />
+      </a>
 		</nav>
 	</header>
 );

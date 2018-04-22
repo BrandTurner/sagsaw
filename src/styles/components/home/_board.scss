@@ -40,6 +40,13 @@
     min-height: 160px;
     width: 100%;
     background: #f2f2f2;
+    color: #212121 !important;
+
+    &:hover {
+      background: #E91E63;
+      color: #FFFFFF !important;
+
+    }
   }
   .box-content-image {
     height: 160px;
@@ -52,22 +59,26 @@
     min-height: 0;
     margin-left: 180px;
     padding: 15px 0 20px 0;
+
   }
   .board-loc {
     font-size: 14px;
-    color: #E91E63;
     font-family: 'AvantGarde';
     margin-bottom: 5px;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
+
+
   .board-mod {
-    font-family: 'AvantGarde' !important;
+    font-family: 'AvantGardeDemi' !important;
     font-size: 20px !important;
-    color: #716b70;
+
     margin-bottom: 5px !important;
     line-height: 1.2 !important;
   }
+
+
 
   .about-about-desc {
     display: block;
@@ -88,7 +99,7 @@
     line-height: 1.4;
     letter-spacing: .6px;
     text-transform: none;
-    -webkit-tap-highlight-color: #7C4DFF;
+
     font-weight: 100;
     text-transform: uppercase;
   }
@@ -145,7 +156,6 @@
 }
 .board-loc {
   font-size: 14px;
-  color: #E91E63;
   font-family: 'AvantGarde';
   margin-bottom: 5px;
   text-transform: uppercase;

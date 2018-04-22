@@ -7,7 +7,7 @@ const menu = [
         path: '/about',
       },
       {
-        text: 'Our Mission and Values',
+        text: 'Vision, Mission, Values',
         path: '/mission',
       },
       {

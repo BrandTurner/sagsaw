@@ -6,11 +6,18 @@ import Logo from 'components/layout/Logo';
 import Image from 'images/one.jpg';
 import styled from 'styled-components';
 
-const BoardCover = () => <DisplaySection>OUR BOARD</DisplaySection>;
+const BoardCover = () =>  <div>
+                            <DisplaySection>
+                            OUR BOARD
+                            </DisplaySection>
+                            <Instructions>
+                              Click on a board member to open their bio
+                              </Instructions>
+                          </div>;
 
 export default BoardCover;
 
-const DisplaySection = styled.section`
+const DisplaySection = styled.div`
 	font-family: 'AvantGardeDemi';
 	display: flex;
 	align-items: center;
@@ -18,6 +25,15 @@ const DisplaySection = styled.section`
 	color: #e91e63;
 	font-size: 48px;
 	padding-top: 50px;
+`;
+
+const Instructions = styled.div`
+  font-size: 20px !important;
+  	font-family: 'AvantGarde';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #e91e63;
 `;
 
 const Row = styled.div`

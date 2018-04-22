@@ -52,7 +52,7 @@ class Footer extends Component {
 											marginRight: 10,
 										}}
 									>
-										<SocialLink>
+										<SocialLink href="https://www.facebook.com/saveagirlsaveaworld.org/" target="_blank">
 											<Icon type="facebook" style={{ fontSize: 32, color: '#fff' }} />
 										</SocialLink>
 									</li>
@@ -64,8 +64,20 @@ class Footer extends Component {
 											marginRight: 10,
 										}}
 									>
-										<SocialLink>
+										<SocialLink href="https://www.instagram.com/saveagirl_saveaworld/" target="blank">
 											<Icon type="instagram" style={{ fontSize: 32, color: '#fff' }} />
+										</SocialLink>
+									</li>
+                  <li
+										style={{
+											display: 'inline-block',
+											float: 'left',
+											marginTop: 6,
+											marginRight: 10,
+										}}
+									>
+										<SocialLink href="https://twitter.com/SaveAGirl1" target="_blank">
+											<Icon type="twitter" style={{ fontSize: 32, color: '#fff' }} />
 										</SocialLink>
 									</li>
 									<li
@@ -76,7 +88,7 @@ class Footer extends Component {
 											marginRight: 10,
 										}}
 									>
-										<SocialLink>
+										<SocialLink href="https://www.youtube.com/channel/UCp86DKsgKhtbv2usEn9Fstw" target="_blank">
 											<Icon type="youtube" style={{ fontSize: 32, color: '#fff' }} />
 										</SocialLink>
 									</li>
