@@ -15,13 +15,13 @@ class Footer extends Component {
 								<SkewedLabel>
 									<SkewedInput type="text" name="first_name" placeholder="First Name" />
 								</SkewedLabel>
-								<SkewedLabel>
+								<SkewedLabel style={{ borderLeftColor: 'rgb(50,43,43)' }}>
 									<SkewedInput type="text" name="last_name" placeholder="Last Name" />
 								</SkewedLabel>
-								<SkewedLabel>
+								<SkewedLabel style={{ borderLeftColor: 'rgb(50,43,43)' }}>
 									<SkewedInput type="text" name="email" placeholder="Email" />
 								</SkewedLabel>
-								<SkewedButton>
+								<SkewedButton style={{ borderLeftColor: 'rgb(50,43,43)' }}>
 									<Icon type="arrow-right" style={{ fontSize: 40, color: '#fff' }} />
 								</SkewedButton>
 							</form>
@@ -274,7 +274,8 @@ const SkewedLabel = styled.label`
 	background: #322b2b;
 	height: 60px;
 	max-width: 200px;
-	display: inline-block;
+  display: inline-block;
+  background-color: #FFF;
 `;
 
 const SkewedInput = styled.input`
@@ -290,15 +291,39 @@ const SkewedInput = styled.input`
 	margin-left: 16px;
 	padding: 16px 10px 12px;
 	font-family: 'AvantGarde', Arial, Helvetica, sans-serif;
-	color: #fff;
+	color: #322b2b;
 	height: 55px;
 	font-size: 18px;
 	font-weight: 400;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  background-color: #FFF;
+
+  &::placeholder {
+    color:#E91E63;
+  }
+
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#E91E63;
+  }
+
+  &&:-moz-placeholder { /* Firefox 18- */
+    color:#E91E63;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    color:#E91E63;
+  }
+
+  &:-ms-input-placeholder { /* IE */
+    color:#E91E63;
+  }
+
+  &::-ms-input-placeholder { /* IE Edge */
+    color:#E91E63;
+  }
 `;
 
 const SkewedButton = styled.button`
-	border: 1px solid white;
 	border-radius: 0;
 	padding: 3px 10px;
 	-moz-transform: skewX(16deg);
@@ -306,7 +331,8 @@ const SkewedButton = styled.button`
 	-o-transform: skewX(16deg);
 	-ms-transform: skewX(16deg);
 	transform: skewX(16deg);
-	background: #322b2b;
+	background: #E91E63;
+  border-left: 1px solid #322b2b;
 	height: 60px;
 	max-width: 200px;
 	vertical-align: bottom;

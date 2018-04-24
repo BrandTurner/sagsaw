@@ -3,37 +3,48 @@
     {
       "position": "Founder & CEO",
       "location": "Los Angeles, CA",
-      "name": "Glenda Gill",
-      "image": "aishaH.png",
-      "email": "gg@sagsaw.org"
+      "name"    : "Glenda Gill",
+      "image"   : "gg_headshot.jpg",
+      "email"   : "gg@sagsaw.org"
     },
     {
       "position": "Mentor | Mentee Coordinator",
       "location": "Dallas, TX",
-      "name": "Aisha Habeeb",
-      "image": "aishaH.png",
-      "email": "aisha@sagsaw.org"
+      "name"    : "Aisha Habeeb",
+      "image"   : "aisha_headshot.png",
+      "email"   : "aisha@sagsaw.org"
     },
     {
-      "name": "K. Camille Wilbourn",
-      "image": "sheilaCoates.png",
+      "name"    : "K.C. Wilbourn Snapp",
+      "image"   : "KC.png",
       "location": "Dallas, TX",
       "position": "Board Development Coordinator | Infrastructure",
-      "email": "help@sagsaw.org"      
+      "bio"     : "KC Wilbourn Snapp is the COO of Franklin-Wright Settlements, Inc. She has over sixteen years in education and nine years in leadership and organizational development. A public speaker and published author, she earned her undergraduate degree from Spelman College in Atlanta, Georgia and completed her graduate studies at Wayne State University in Detroit, Michigan. She is a mother to one son, Mainza Snapp II, who is a student at Morehouse College. Her affiliations include membership of Alpha Kappa Alpha Sorority, Inc., Marracci Court No. 32- Daughters of Isis, Capstone Chapter No. 29, Order of the Eastern Star, and board president of Save A Girl, Save A World, Inc.",
+      "email"   : "help@sagsaw.org"
     },
     {
-      "name": "Linda K. Brown",
-      "image": "sheilaCoates.png",
+      "name"    : "Linda K. Brown",
+      "image"   : "sheilaCoates.png",
       "location": "Dallas, TX",
       "position": "Public Relations Coordination & Support",
-      "email": "help@sagsaw.org"  
+      "email"   : "help@sagsaw.org"
     },
     {
-      "name": "Antonette Bruno",
-      "image": "sheilaCoates.png",
+      "name"    : "Antonette Bruno",
+      "image"   : "a_bruno.png",
       "location": "Dallas, TX",
       "position": "Infrastructure & Development",
-      "email": "help@sagsaw.org"  
+      "email"   : "help@sagsaw.org",
+      "bio"     : "Antonette Bruno is the Fundraising Manager for Save A Girl Save A World.  Antonette has many years experience working with local and national nonprofits including the American Red Cross, National Breast Cancer Coalition, Action for Healthy Kids, Gifting Dreamers, and the United States Conference of Catholic Bishops.<br />As a community servant, Antonette serves as the Ethics Commissioner for the Town of Bladensburg, serves as a lifetime volunteer for Prince Georges County Public Schools, and mentors at-risk youth residing at the FreeState Challenge Academy in Aberdeen, Maryland. She holds a Bachelor’s Degree in Accounting and a Master’s Degree in Public Administration."
+
+    },
+    {
+      "name": "LLauna Parker",
+      "image": "Llauna.png",
+      "location": "Dallas, TX",
+      "position": "Social Media Manager",
+      "email": "help@sagsaw.org",
+      "bio": "With over 10 years’ blogging, social media and digital advertising experience, Llauna Parker, CEO of Style Chic 360, has collaborated with some of fashions well-known names such as: Kohl’s, Meijer, Stacy London, ClickonDetroit, and Shoe Carnival. Llauna’s keen eye for fashion and ability to give the people what they want warranted her to be featured on some of the coolest blog sites include Fashion Bomb Daily and Bossip.<br />Llauna has what it takes to achieve success in the social media marketing world. She uses her comprehensive knowledge of diverse social media channels and strategies to grow, sustain and make significant impact on an organization’s presence in the digital world. As a Social Media Manager, she has mastered the ability of sharing relevant content, engaging with her audience, and covering special events to stimulate outstanding customer experiences and building a loyal client base.<br />Llauna monitors trends and analyzes metrics to drive brand awareness and increase SEO. Her expertise can be leveraged to enable successful marketing and online communications strategies. She excels at leading efficient and productive teams and implementing forward-thinking strategies and concepts to create and sustain customer and revenue growth."
     }
   ]
 }

@@ -58,6 +58,16 @@ const menu = [
    {
      text: 'partners',
      path: '/contentPartner',
+     submenu: [
+       {
+         text: 'CSTEM',
+         path: '/contentPartner'
+       },
+       {
+         text: 'World of Money',
+         path: '/contentPartner'
+       },
+     ]
    },
 
   {
