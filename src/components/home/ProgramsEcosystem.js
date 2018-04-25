@@ -75,7 +75,7 @@ const ProgramsEcosystem = () => (
                   <SnapshotHeading>35 HIGH SCHOOL FEMALES</SnapshotHeading>
                   <SnapshotText><SnapshotTextP>Our high school mentees are girls who are committed and confident. They have a positive outlook and look to a future that holds
                     great possibilities for themselves, their family, and the world. They are inspired and inspiring. Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet vestibulum condimentum fusce curabitur a fringilla ullamcorper a nisl.Elementum vehicula suspendisse vestibulum imperdiet proin nostra facilisi sed sed est non ullamcorper eu proin tincidunt condimentum donec urna non sem mauris.Proin.</SnapshotTextP></SnapshotText>
-                  <span><ApplyLink><Icon type="arrow-right" /> APPLY NOW </ApplyLink></span>
+                  <span><ApplyLink href="https://goo.gl/forms/8EDnH5QGyFTyvnMa2" target="_blank"><Icon type="arrow-right" /> APPLY NOW </ApplyLink></span>
                 </GutterBox>
               </Col>
               <Col className="gutter-row" span={8}>
@@ -87,7 +87,7 @@ const ProgramsEcosystem = () => (
                     also guiding their mentees by promoting high self-esteem, supporting their academic achievements and encourage  positive life choices.
 Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet vestibulum condimentum fusce curabitur a fringilla ullamcorper a nisl.Elementum vehicula suspendisse vestibulum imperdiet
                    </SnapshotTextP></SnapshotText>
-                  <span><ApplyLink><Icon type="arrow-right" /> APPLY NOW</ApplyLink></span>
+                  <span><ApplyLink href="https://goo.gl/forms/8EDnH5QGyFTyvnMa2" target="_blank"><Icon type="arrow-right" /> APPLY NOW</ApplyLink></span>
                 </GutterBox>
               </Col>
               <Col className="gutter-row" span={8}>
@@ -102,10 +102,12 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
   self-esteem, supports academic achievement, and introduces her mentee to new
   bright ideas.
 </SnapshotTextP> </SnapshotText>
-                  <span><ApplyLink><Icon type="arrow-right" /> APPLY NOW</ApplyLink></span>
+                  <span><ApplyLink href="https://goo.gl/forms/SJTjSbUTQVKzAl4Q2" target="_blank"><Icon type="arrow-right" /> APPLY NOW</ApplyLink></span>
                 </GutterBox>
               </Col>
             </Row>
+
+
 
   <Row>
               <Col className="gutter-row" span={24}>
@@ -199,6 +201,90 @@ Dictumst mi ullamcorper iaculis potenti consectetur congue suspendisse imperdiet
         </Tabs>
 </Col>
 </Row>
+
+<Row>
+              <Col className="gutter-row" span={24}>
+                  <h2 className="about-desc" style={{ textAlign: 'left', marginBottom: 20 }}>
+								WHAT ARE THE BENEFITS OF BECOMING A SAVE A GIRL SAVE A WORLD MENTOR?
+							</h2>
+                <SnapshotText style={{ marginBottom: 30 }}>
+                  <SnapshotTextL >
+                    Becoming a SAVE A GIRL, SAVE A WORLD mentor is sure to be a fun and rewarding experience.Studies have shown that mentoring is a highly
+                    effective strategy for preventing several key problems that young people face.When you volunteer your time as a Save A Girl, Save The World
+                    mentor you become a positive influence during a critical developmental period in a young girl’ s life.It is a time when girls make choices
+                    that can change the course of their lives forever.Mentors help girls make positive choices.
+                    <br /><br />
+                    A major U.S. study found that young people with mentors are:
+                    <ul style={{ fontFamily: 'Roboto slab', listStyleType: 'disc', listStylePosition: 'inside' }}>
+                      <li style={{ fontFamily: 'Roboto Slab' }}>46% less likely to begin using illegal drugs and 27% less likely to begin using alcohol</li>
+                      <li style={{ fontFamily: 'Roboto Slab' }}>52% less likely to skip school and are more confident in their performance in school work</li>
+                      <li style={{ fontFamily: 'Roboto Slab' }}>67% more likely to have a healthy relationship with their families</li>
+                    </ul>
+                    In addition, research confirms that people gain a multitude of skills from volunteering, including enhanced interpersonal skills and improved ability to understand people better, motivate others, and deal with difficult situations.
+                  </SnapshotTextL>
+                </SnapshotText>
+              <h2 className="about-desc" style={{ textAlign: 'left', marginBottom: 20 }}>
+								CRITERIA FOR PARTICIPATION
+							</h2>
+              <SnapshotText style={{ marginBottom: 30 }}>
+                  <SnapshotTextL>
+                    SAVE A GIRL, SAVE A WORLD is designed to provide continual education and awareness on the benefits of successful mentoring by connecting
+                    and supporting mentoring relationships between three generations of women.SAVE A GIRL, SAVE A WORLD planning committee is focused and eager
+                    to support your mentor / mentee relationship throughout the year.
+                  </SnapshotTextL>
+              </SnapshotText>
+              <h2 className="about-desc" style={{ textAlign: 'left', marginBottom: 20 }}>
+								PROFESSIONAL MENTOR
+							</h2>
+              <SnapshotText style={{ marginBottom: 30 }}>
+                  <SnapshotTextL>
+                   If you are committed to making a positive difference in a young ladies life and interested in developing new skills that could improve
+                   your own life we invite you to join us.Click here to apply.
+
+                  </SnapshotTextL>
+                  <SnapshotTextL>
+                  <span style={{ textAlign: 'left' }}><ApplyLink href="https://goo.gl/forms/SJTjSbUTQVKzAl4Q2" target="_blank"><Icon type="arrow-right" style={{ textAlign: 'left' }}/> APPLY NOW</ApplyLink></span>
+                  </SnapshotTextL>
+              </SnapshotText>
+              <h2 className="about-desc" style={{ textAlign: 'left', marginBottom: 20 }}>
+								COLLEGE MENTOR/MENTEE
+							</h2>
+              <SnapshotText style={{ marginBottom: 30 }}>
+                  <SnapshotTextL>
+                   Since a college mentor will act as a mentor to their high school mentee and as a mentee under their professional mentor they should have adequate time available to connect with both.The goal of the college mentor / mentee is to build a relationship with business professionals and assist the mentees as they prepare
+                   for the journey into college life.Click here to apply.
+                  </SnapshotTextL>
+                  <SnapshotTextL>
+                    <span style={{ textAlign: 'left' }}><ApplyLink href="https://goo.gl/forms/8EDnH5QGyFTyvnMa2" target="_blank"><Icon type="arrow-right" style={{ textAlign: 'left' }}/> APPLY NOW</ApplyLink></span>
+                  </SnapshotTextL>
+              </SnapshotText>
+              <h2 className="about-desc" style={{ textAlign: 'left', marginBottom: 20 }}>
+								HIGH SCHOOL MENTEE
+							</h2>
+              <SnapshotText style={{ marginBottom: 30 }}>
+                  <SnapshotTextL>
+                   High School Mentees should possess an eagerness and desire to learn and have respect
+                   for mentor’ s expertise.
+
+                  </SnapshotTextL>
+                  <SnapshotTextL>
+                    <span style={{ textAlign: 'left' }}><ApplyLink href="https://goo.gl/forms/8EDnH5QGyFTyvnMa2" target="_blank"><Icon type="arrow-right" style={{ textAlign: 'left' }}/> APPLY NOW</ApplyLink></span>
+                  </SnapshotTextL>
+              </SnapshotText>
+
+              <h2 className="about-desc" style={{ textAlign: 'left', marginBottom: 20 }}>
+								COMMUNICATION
+							</h2>
+              <SnapshotText style={{ marginBottom: 30 }}>
+                  <SnapshotTextL>
+                   In any mentorship program communication is key.Each mentor will commit to communicate once a month with their mentees.The
+                   following communication is acceptable and suggested: email, social media or telephone, in person, Skype, video conference, etc.
+                   The communication should be designed by the mentor / mentees in a way that best serves you.Mentees should always be prepared to
+                   actively participate and provide feedback.
+                  </SnapshotTextL>
+              </SnapshotText>
+              </Col>
+            </Row>
           </SnapshotContainer>
 
 
@@ -267,6 +353,17 @@ const SnapshotTextP = styled.p `
   margin-bottom: 15px;
   color: #212121;
 `;
+
+const SnapshotTextL = styled.p `
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: .54px;
+  font-family: 'Roboto Slab';
+  margin-bottom: 15px;
+  color: #212121;
+  text-align: left !important;
+`;
+
 
 
 const SnapshotContainer = styled.div`
