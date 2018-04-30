@@ -28,6 +28,7 @@ const DisplaySection = styled.div`
 `;
 
 const Instructions = styled.div`
+  margin-top: 20px;
   font-size: 20px !important;
   	font-family: 'AvantGarde';
 	display: flex;

@@ -1,3 +1,12 @@
+.home__about_cover_blog {
+  position: relative;
+  z-index: z("default");
+  background-color: #fff;
+  overflow-x: hidden;
+  height: auto;
+  overflow: hidden;
+}
+
 .home__about_cover {
   position: relative;
   z-index: z("default");

@@ -30,12 +30,12 @@ const menu = [
     rootpath: '/getInvolved',
     submenu: [
       {
-        text: 'Upcoming Programs and Events',
-        path: '/',
+        text: 'Mentee Applications',
+        path: 'https://goo.gl/forms/8EDnH5QGyFTyvnMa2'
       },
       {
-        text: 'Benefits and Criteria',
-        path: '/benefits',
+        text: 'Professional Mentor Applications',
+        path: 'https://goo.gl/forms/SJTjSbUTQVKzAl4Q2'
       },
       {
         text: 'Volunteer',
@@ -44,14 +44,6 @@ const menu = [
       {
         text: 'Scholarship',
         path: 'Scholarship',
-      },
-      {
-        text: 'Testimonials',
-        path: '/',
-      },
-      {
-        text: 'Volunteer',
-        path: '/',
       },
     ],
   },
