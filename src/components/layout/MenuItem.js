@@ -43,6 +43,11 @@ const MenuItem = ({ text, rootPath, path, submenu, location }) => {
   const current =
     location.pathname === path ||
     (rootPath && location.pathname.substr(0, rootPath.length) === rootPath);
+
+    console.log('Location: ', location);
+    console.log('Root Path: ', rootPath);
+    console.log('Submenu: ', submenu);
+    console.log('Path: ', path)
   return (
     <div className={classNames('menu-item', { withSubmenu: submenu, current })}>
       <MenuItemLink text={text} path={path}>
@@ -51,11 +56,20 @@ const MenuItem = ({ text, rootPath, path, submenu, location }) => {
       </MenuItemLink>
       {submenu && (
         <div className="menu-item__submenu">
-          {submenu.map(({ text: itemText, path: itemPath }) => (
+          {submenu.map(({ text: itemText, path: itemPath }) => {
+            if (itemPath.substr(0,5) !== 'https') {
+            return (
             <Link key={itemText} to={itemPath} className="submenu__item">
               {itemText}
             </Link>
-          ))}
+            )} else {
+              return (
+              <a target="_blank" href={itemPath} className="submenu__item">
+                {itemText}
+              </a>
+              )
+            }
+          })}
         </div>
       )}
     </div>

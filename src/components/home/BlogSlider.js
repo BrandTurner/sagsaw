@@ -147,9 +147,9 @@ class BlogSlider extends Component {
 							</Author>
 							<Content>
 								GLENDA GILL JUST WANTS TO SAVE THE WORLD. It’s a daunting task, but she’s well on her way to accomplishing her goal through her
-								 organization Save a Girl, Save a World (SAGSAW). “I am very grateful that I have been blessed with the opportunity with our team 
-								 to serve and inspire a generation of young girls and women in unlocking their greatness through multigenerational empowerment,” 
-								 says Gill. “My passion is to serve, share, teach and learn with a share-it-forward attitude and commitment, which will result in 
+								 organization Save a Girl, Save a World (SAGSAW). “I am very grateful that I have been blessed with the opportunity with our team
+								 to serve and inspire a generation of young girls and women in unlocking their greatness through multigenerational empowerment,”
+								 says Gill. “My passion is to serve, share, teach and learn with a share-it-forward attitude and commitment, which will result in
 								 creating lasting legacies for young women who will be our dynamic leaders of tomorrow.
 							</Content>
 							<ReadMoreLink href="https://rollingout.com/2018/02/11/glenda-gill-starts-save-a-girl-save-the-world-to-help-one-girl-at-at-time/" target="_blank">
@@ -239,7 +239,7 @@ const Container = styled.div`
 	padding-right: 15px;
 	padding-left: 15px;
   width: 100%;
-  max-width: 1220px;  
+  max-width: 1220px;
 `;
 
 const Container2 = styled.div`

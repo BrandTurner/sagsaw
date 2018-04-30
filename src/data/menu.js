@@ -59,12 +59,40 @@ const menu = [
          text: 'World of Money',
          path: '/contentPartner'
        },
+       {
+         text: 'Sponsorships',
+         path: '404'
+       }
      ]
    },
 
   {
     text: 'The Latest',
-    path: '/blog',
+    rootpath: '/blog',
+    submenu: [{
+        text: 'Blog and News',
+        path: '/blog'
+      },
+      {
+        text: 'Testimonials',
+        path: '/404'
+      },
+      {
+        text: 'Upcoming Events',
+        path: '/404'
+      },
+      {
+        text: 'Media Gallery',
+        path: '/404'
+      },
+      {
+        text: 'Newsletter',
+        path: '/404'
+      },
+
+
+    ]
+
   },
 ];
 
